@@ -1,0 +1,19 @@
+.ma-image-card{
+    &--primary{
+        background-color: #b4b4b4;
+        padding: 15px;
+        min-width: 300px;
+    }
+    &--secondary{
+        padding:15px;
+        background-color: #b4b4b4;
+        min-height: 150px;
+        .card-inner-wrapper{
+            padding: 15px;
+            border:1px dotted #fff;
+            display: flex;
+            align-items: flex-end;
+            width: 100%;
+        }
+    }
+}

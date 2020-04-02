@@ -1,0 +1,511 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+
+$base-text-color: #000;
+$preferred_font: 'Roboto', 'Helvetica', 'Arial', sans-serif !default;
+$color-base: $base-text-color;
+
+$light: lighten($color-base,60%);
+$dark: darken($color-base,15%);
+
+
+$lighter: lighten($color-base,30%);
+$darker: darken($color-base,30%);
+
+body{
+  color:$base-text-color ;
+  //font-family: $font-family-rubik;
+  font-family: 'Roboto', sans-serif;
+}
+
+//circle-icon defalt colors
+$ci-bg--color :#eee !default;
+$ci-col-hover:#eee !default;
+$background-item:#fff;
+
+// state text  colors ...........................................
+
+.ma-txt__primary {
+  color: $ma_text_color_primary !important;
+}
+.ma-txt__secondary {
+  color: $ma_text_color_secondary !important;
+}
+.ma-txt__tertiary {
+  color: $ma_text_color_tertiary !important;
+}
+.ma-txt__quaternary {
+  color: $ma_text-color_quaternary !important;
+}
+
+
+//State link colors...........................................
+.ma-link--primary{
+  @include typo-body-1();
+  font-style: normal;
+  line-height: 1.5;
+  text-decoration: underline;
+  color: $ma-link-color__primary;
+  cursor: pointer;
+
+  &.__bold{
+    font-weight: 500;
+  }
+
+  &:hover{
+    color: darken($ma-link-color__primary,30%);
+  }
+}
+
+
+
+.ma-link--secondary{
+  @include typo-body-1();
+  font-style: normal;
+  line-height: 1.5;
+  text-decoration: underline;
+  color: $ma-link-color__secondary;
+
+  &.__bold{
+    font-weight: 500;
+  }
+
+  &:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: $ma-link-color__secondary;
+  }
+}
+
+
+// state background colors ...........................................
+
+
+.no-color__state_background{
+ background-color:$no-color--state  !important;
+  i,p,&.chip span,span{
+    color:$background-item !important;
+  }
+}
+.active-color--state_background{
+  background-color:$active-color--state  !important;
+  i,p,&.chip span,span{
+    color:$background-item !important;
+  }
+}
+.mute-color--state_background{
+  background-color:$mute-color--state  !important;
+  i,p,&.chip span,span{
+    color:$background-item !important;
+  }
+}
+.firm-color--state_background{
+  background-color:$firm-color--state !important;
+  i,p,&.chip span,span{
+    color:$background-item !important;
+  }
+}
+.alert-color--state_background{
+  background-color:$alert-color--state !important;
+  i,p,&.chip span,span{
+    color:$background-item !important;
+  }
+}
+.definite-color--state_background{
+  background-color:$definite-color--state !important;
+  i,p,&.chip span,span{
+    color:$background-item !important;
+  }
+}
+.quote-color--state_background{
+  background-color:$quote-color--state !important;
+  i,p,&.chip span,span{
+    color:$background-item !important;
+  }
+}
+
+// state icons and fonts  colors ...........................................
+
+.no-color--state{
+  color:$no-color--state !important;
+  i,p,&.chip span,span{
+    color:$no-color--state !important;
+  }
+}
+.active-color--state{
+  color:$active-color--state !important;
+  i,p,&.chip span,span{
+    color:$active-color--state !important;
+  }
+}
+.mute-color--state{
+  color:$mute-color--state !important;
+  i,p,&.chip span,span{
+    color:$mute-color--state !important;
+  }
+}
+.firm-color--state{
+  color:$firm-color--state !important;
+  i,p,&.chip span,span{
+    color:$firm-color--state !important;
+  }
+}
+.alert-color--state{
+  color:$alert-color--state !important;
+  i,p,&.chip span,span{
+    color:$alert-color--state !important;
+  }
+}
+.definite-color--state{
+  color:$definite-color--state !important;
+  i,p,&.chip span,span{
+    color:$definite-color--state !important;
+  }
+}
+
+.quote-color--state{
+  background-color:$quote-color--state !important;
+  i,p,&.chip span,span{
+    color:$background-item !important;
+  }
+}
+
+
+.package-color--product_background {
+  background-color: $package-color--product !important;
+  i ,p,&.chip span,span{
+    color: $background-item !important;
+  }
+}
+
+.package-color--product{
+  color: $package-color--product;
+}
+.package-color--item{
+  color: $package-color--type;
+
+}
+
+
+
+%tc-ellipsis{
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+
+.ma-txt__underline{
+  text-decoration: underline;
+}
+.ma-txt__line-through{
+  text-decoration: line-through;
+}
+.ma-txt__line-overline{
+  text-decoration: overline;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.ma-txt__white-space-normal{
+  overflow-wrap: inherit;
+  white-space: inherit;
+}
+
+.ma-txt{
+  &__light {
+    color: $light; //black 60%
+  }
+  &__dark {
+    color: $dark; //black
+  }
+  &__lighter {
+    color: $lighter;
+  }
+  &__darker {
+    color: $darker;
+  }
+  &__align-right {
+   text-align: right;
+  }
+  &__align-left {
+    text-align: left !important;
+   }
+  &__right{
+        text-align: right;
+       
+  }
+  &__left{
+    text-align: left;
+  }
+
+  &__center{
+    text-align: center;
+  }
+
+
+}
+
+fieldset.demo{
+  background-color: #fff;
+  legend{
+    background-color: #eee;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  margin-bottom: 20px;
+
+}
+
+    h1, h2, h3, h4, h5, h6, p {
+      margin: 0;
+      padding: 0;
+    }
+
+     h1.ma__heading-1 small,   h2.ma__heading-2 small, h3.ma__heading-3 small, h4.ma__heading-4 small,   h5.ma__heading-5 small, h6.ma__heading-6 small {
+      @include typo-display-3($colorContrast: false);
+      font-size: 0.6em;
+    }
+
+  h1.ma__heading-1 {
+  @include typo-display-3;
+
+    margin-top: 0;
+    margin-bottom: 0;
+    @extend %tc-ellipsis;
+  }
+
+  h2.ma__heading-2 {
+    @include typo-display-2;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  h3.ma__heading-3 {
+    @include typo-display-1;
+
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  h4.ma__heading-4 {
+    @include typo-display-1;
+    font-size:16px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .ma__subtitle-1 {
+    @include typo-headline;
+    font-size: 14px ;
+    line-height: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+
+    &-small{
+      @include typo-headline;
+      font-size: 12px ;
+      line-height: 12px;
+
+    }
+    &-large{
+      @include typo-headline;
+      font-size: 16px ;
+      line-height: 16px;
+    }
+  }
+
+  .ma__subtitle-2 {
+    @include typo-title;
+    font-size: 16px;
+    line-height: 16px;
+
+
+    &-small{
+      @include typo-title;
+      font-size: 14px ;
+      line-height: 14px;
+    }
+
+    &-large{
+      @include typo-title;
+      font-size: 18px ;
+      line-height: 18px;
+    }
+  }
+
+  /*h4.ma__heading-4 {
+    @include typo-headline;
+
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  h5.ma__heading-5 {
+    @include typo-title;
+
+    margin-top:0;
+    margin-bottom: 0;
+  }
+
+  .ma__heading-title {
+    @include typo-title;
+
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  h6.ma__heading-6 {
+    @include typo-subhead;
+
+    margin-top: 0;
+    margin-bottom: 0;
+  }*/
+
+p {
+    @include typo-body-1;
+    margin-bottom: 16px;
+  }
+
+.lead{
+  @include typo-title;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+/*
+.ma__heading__caption {
+      @include typo-caption;
+      font-style: normal;
+      color: #909cac;
+   }*/
+.ma-txt__caption{
+  @include typo-caption;
+  font-style: normal;
+  color: #909cac;
+}
+.ma-txt__link{
+  @include typo-caption;
+  font-style: normal;
+  line-height: 16px;
+  color: #27bfc2;
+  text-decoration: none;
+}
+
+
+.ma-txt__body2{
+  @include typo-body-2;
+  @extend %tc-ellipsis;
+  line-height: 1.5;
+
+  &-small{
+    @include typo-body-2;
+    @extend %tc-ellipsis;
+    font-size: 14px !important;
+  }
+
+  &-large{
+    @include typo-body-2;
+    @extend %tc-ellipsis;
+    font-size: 18px;
+  }
+
+}
+
+.ma-txt__body1{
+  @include typo-body-1;
+  @extend %tc-ellipsis;
+  //margin-bottom: 10px;
+
+  &-small{
+    font-size: 14px;
+   // @include typo-body-1;
+    @extend %tc-ellipsis;
+  }
+
+  &-large{
+    font-size: 18px;
+   // @include typo-body-1;
+    @extend %tc-ellipsis;
+  }
+
+
+  /* &.__link{
+     @include typo-body-1();
+     font-style: normal;
+     line-height: 1.5;
+     text-decoration: underline;
+
+     &.__bold{
+       font-weight: 500;
+     }
+
+     &:hover{
+       color: #0d47a1;
+     }
+
+   }*/
+}
+
+/*.ma-txt__body1-large{
+  @include typo-subhead;
+  @extend %tc-ellipsis;
+  color: $central-brand-primary;
+  &#TRD_PER_INFO_CLI_NAME {
+    color: #000 !important;
+  };
+  &#PROFILE_TYPE_WHS {
+    color: #000 !important;
+  };
+  &#PROFILE_TYPE_GRP {
+    color: #000 !important;
+  }
+}*/
+
+.tc-subheading {
+      @include typo-subhead;
+      @extend %tc-ellipsis;
+    }
+
+//Custom Classes
+// To be removed
+/*.expanded{
+.tc-body1--txt{
+  font-size: 14px;
+}
+
+}*/
+
+.my-bordered-list {
+  /* remove the side padding. we'll be placing it around the item instead. */
+  padding-right: 0;
+  padding-left: 0;
+}
+.my-bordered-list .mdc-list-item {
+  /* Add the list side padding padding to the list item. */
+  padding: 0 16px;
+  /* Add a border around each element. */
+  border: 1px solid rgba(0, 0, 0, .12);
+}
+/* Ensure adjacent borders don't collide with one another. */
+.my-bordered-list .mdc-list-item:not(:first-child) {
+  border-top: none;
+}
+//Font Weight
+
+.ma-fontweight{
+  &__normal{
+    font-weight: 400 !important;
+  }
+
+  &__medium{
+    font-weight: 500 !important;
+  }
+
+  &__bold{
+    font-weight: 600 !important;
+  }
+
+  &__bolder{
+    font-weight: 600 !important;
+  }
+}

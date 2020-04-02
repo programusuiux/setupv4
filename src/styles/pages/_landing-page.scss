@@ -1,0 +1,45 @@
+.ma-landing-page{
+    background-color: #fff;
+    .ma-top-header{
+        margin-bottom: 30px;
+    }
+    .ma-inner-header{
+        margin-bottom: 20px;
+    }
+    .section-header{
+        margin-bottom: 20px;
+    }
+    .featured-favs{
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+        .ma-image-card--primary{
+            margin:5px;
+        }
+    }
+    .recent-section{
+        border-top: 5px solid #E91E63;
+        padding: 20px 0px;
+        margin-bottom: 20px;
+        .recent-cards{
+            flex-wrap: wrap;
+        }
+        .ma-image-card--primary{
+            margin:5px;
+            max-width: 275px;
+            min-width: unset;
+        }
+    }
+    .near-me-section{
+        border-top: 5px solid #E91E63;
+        padding: 20px 0px;
+        margin-bottom: 20px;
+        .near-me-cards{
+            flex-wrap: wrap;
+        }
+        .ma-image-card--primary{
+            margin:5px;
+            max-width: 275px;
+            min-width: unset;
+        }
+    }
+}

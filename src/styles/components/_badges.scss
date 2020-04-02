@@ -1,0 +1,21 @@
+.ma-state-chip{
+    min-width: 30px;
+    height: 30px;
+    padding: 0 10px;
+    border-radius: 15px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    &--primary{
+        @extend .ma-state-chip;
+        background-color: #909cac;
+    }
+} 
+.mat-chip{
+    .mat-chip{
+        font-size: 14px !important;
+        font-weight: 400 !important;
+        line-height: 16px;
+    }
+}

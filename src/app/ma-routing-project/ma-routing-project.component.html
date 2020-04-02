@@ -1,0 +1,45 @@
+<mat-drawer-container class="library-drawer">
+    <mat-drawer #drawer class="" mode="side">
+        <mat-list role="list" class="main-link">
+            <mat-list-item>
+                <img src="../../assets/images/companylogo.png">
+            </mat-list-item>
+            <mat-list-item role="listitem"><a routerLink="/style-guide" mat-button color="primary">Style Guide</a></mat-list-item>
+            <mat-list-item role="listitem"><a routerLink="/top-header" mat-button color="primary">Top Header</a></mat-list-item>
+            <mat-list-item role="listitem"><a routerLink="/inner-header" mat-button color="primary">Inner Header</a></mat-list-item>
+            <mat-list-item role="listitem"><a routerLink="/inner-header" mat-button color="primary">Inner Header</a></mat-list-item>
+            <mat-list-item role="listitem"><a routerLink="/image-card-full" mat-button color="primary">Image Card Full</a></mat-list-item>
+            <mat-list-item role="listitem"><a routerLink="/top-categories" mat-button color="primary">Top Categories</a></mat-list-item>
+            <mat-list-item role="listitem"><a routerLink="/image-card-primary" mat-button color="primary">Image Card Primary</a></mat-list-item>
+            <mat-list-item role="listitem"><a routerLink="/image-card-secondary" mat-button color="primary">Image Card Secondary</a></mat-list-item>
+            <mat-list-item role="listitem"><a routerLink="/download-component" mat-button color="primary">App Download</a></mat-list-item>
+            <mat-list-item role="listitem"><a routerLink="/footer" mat-button color="primary">Footer</a></mat-list-item>
+            <mat-list-item role="listitem"><a routerLink="/landing-page" mat-button color="primary">Landing Page</a></mat-list-item>
+        </mat-list>
+    </mat-drawer>
+    <div class="example-sidenav-content">
+        <div class="wrapper-tmp">
+          <button mat-mini-fab type="button" mat-button (click)="drawer.toggle()">
+            <i class="material-icons">menu</i>
+          </button>
+    
+          <div class="container-tmp">
+            <header class="template-header header">
+              <div class="grid-inner">
+                <div class="title">
+                  <h1>Multi App Web</h1>
+                </div>
+                <div>Component Library / DESIGN GUIDELINES</div>
+                <p>
+                  Welcome to the Component Library/Design Guideline for Multi App Web
+                </p>
+              </div>
+            </header>
+    
+            <div class="component-viewport">
+              <router-outlet></router-outlet>
+            </div>
+          </div>
+        </div>
+      </div>
+</mat-drawer-container>

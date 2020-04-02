@@ -1,0 +1,89 @@
+.ma_flex{
+    &--container{
+      @include flexbox();
+
+       &.space-between{
+         justify-content: space-between !important;
+       }
+    }
+    &__item{
+      @include align-self(auto);
+      @include  flex(1 1 auto);
+
+      &--inherit{
+        flex-grow: inherit;
+      }
+
+      &--vcenter{
+        display: flex;
+        align-items: center;
+      }
+      &--vbottom{
+        display: flex;
+        align-items: flex-end;
+      }
+      &.p10{
+        width: 10%;
+      }
+      &.p15{
+        width: 15%;
+      }
+      &.p20{
+        width: 20%;
+      }
+      &.p25{
+        width: 25%;
+      }
+      &.p30{
+        width: 30%;
+      }
+      &.p33{
+        width: 33%;
+      }
+      &.p40{
+        width: 40%;
+      }
+      &.p50{
+        width: 50%;
+      }
+      &.p70{
+        width: 70%;
+      }
+      &.p75{
+        width: 75%;
+      }
+      &.p100{
+        width: 100%;
+      }
+    }
+}
+.ma{
+    &--flex-box{
+      @include flexbox();
+      @include flex-direction(row);
+      @include flex-wrap(nowrap);
+      @include align-content(stretch);
+      @include align-items(flex-start);}
+    // Add one of the following classes to any html element to achieve a desired depth of the shadow
+  
+  
+    &--depth__1{
+      @include box_shadow(1);
+    }
+  
+    &--depth__2{
+      @include box_shadow(2);
+    }
+  
+    &--depth__3{
+      @include box_shadow(3);
+    }
+  
+    &--depth__4{
+      @include box_shadow(4);
+    }
+    &--depth__5{
+      @include box_shadow(5);
+    }
+  
+  }

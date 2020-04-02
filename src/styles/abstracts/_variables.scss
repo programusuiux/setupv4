@@ -1,0 +1,296 @@
+@import '../base/colors';
+
+
+// Typography
+$font-family-sans-serif: 'Roboto', 'Helvetica', 'Arial', sans-serif !default;
+$font-family-serif: 'Roboto Slab', 'Times New Roman', serif !default;
+$font-family-rubik:  'Rubik', sans-serif;
+
+//<! TO be removed>===============================================================================================
+$ci-bg--color: #fcff77;
+$ma_color_white : #ffffff !default;
+$ma-color_black: #000 !default;
+$ma_color_accent : #7a8aea;
+$ci-col-hover:green;
+$primary:blue;
+$plain : $ma_color_white;
+$ma_color__tertiary : #f58616;
+
+
+$test: gray;
+$prefix :'ma_';
+
+//maimo theme and color codes .....................
+
+$ma_color_primary :#E91E63 !default;
+$ma_color_secondary :#837C7C !default;
+$ma_color_tertiary :#CDDC39 !default;
+$ma_color_quaternary :#333e47;
+$ma_color_type: #8f44ad !default;
+
+
+//$background : $test;
+$white-icon: $plain;
+$circle_icon: #f0f6fa !default;
+$icon_dark: #b8bcbf !default;
+$icon_darker: #a7aaaf !default;
+
+$booking_summary_color: #3b414d !default;
+
+//state colors..............
+$no-color--state: #f5766c !default;
+$active-color--state: $green-700 !default;
+$mute-color--state: $grey-700 !default;
+$firm-color--state: $blue-700 !default;
+$alert-color--state: $yellow-700 !default;
+$definite-color--state: $blue-grey-700 !default;
+$quote-color--state: $brown-700 !default;
+$success-color--state:#27bfc2 !default;
+$cancelled-status: #0000;
+$red-danger: $no-color--state;
+$success_action :#69f0ae !default;
+$success_action_new: #1ce884 !default;
+$refund_status : #fbd46b !default;
+$refund_status_darker :#ffb200 !default;
+
+
+//<! ma_ALERT>===================================================================================================
+//$warning : $red-danger;
+//$success : $teal-400;
+
+$ma_color__primary :#4bb3fa;
+$ma_color__secondary :#27bfc2;
+//$ma_color__tertiary :#f5c70e;
+
+
+
+
+
+
+/* Business Colors */
+$status-hover-font-color: #fff;
+$cancelled-status: black;
+$confirmed-status: yellow;
+$confirmed-multiple: blue;
+$provisional: red !default;
+//$warning: purple;
+$tentative: brown;
+$provisional-multiple:grey;
+/*End of Business Colors*/
+
+/*button colors*/
+
+$ma_button-color__primary : $ma_color__primary;
+$ma_button-color__secondary : $ma_color_white;
+
+
+
+$ma-line-height-base: 18px;
+$ma-line-height-paragraph: 16px;
+
+/*$ma-text-color: #1a1a1a;*/
+$ma-line-color: #91a0ad;
+
+//text colours..............................................
+$ma-text-color__primary:#3a424d !default;
+$ma-text-color__secondary:#909cac !default;
+$ma-text-color__tertiary:#27bfc2;
+$ma-text-color__quaternary:#4bb3fa;
+
+
+//Link Colours..............................................
+$ma-link-color__primary:#3a424d;
+$ma-link-color__secondary:#27bfc2 !default;
+$ma-link-color:#535353 !default;
+
+
+//Border line color.........................................
+$ma-border-color:#e0e0e0 !default;
+$ma-border-color_light: #d9d9d9 !default;
+$ma-border-color_darker: #ababab !default;
+$ma-border-color_darkest: #77818a !default;
+$ma-border-color_lighter: #b7b7b7 !default;
+$table_border: #a6d1f3 !default;
+$table_border_secondary :#d4e1eb !default;
+
+//button colors..............
+$ma-btn-color-default : #91a0ad !default;
+$ma_line_default: #333 !default;
+
+
+
+
+
+
+$accent:#2196F3 !default;
+$central-brand-primary :red;
+$white-color:#fff;
+$fab:#7a8aea;
+$btn-disabled:#c8c8c8;
+$icon-font--color:$ma-text-color__secondary;
+
+$lbl-vat--color:#eee !default;
+$lbl__price-details:#90a4ae !default;
+
+
+$package-color--product: #27bfc2 !default;
+$package-color--type: #f5c70e;
+
+
+//button colors----------------------
+$btn-active-color:$active-color--state;
+$btn-frozen-color:$no-color--state;
+
+
+
+//Product  colors
+//$hotel-color--product: $purple !default;
+//$insurance-color--product: $yellow-700 !default;
+//$car-color--product: $light-blue-700 !default;
+//$package-color--product: $package-color--product !default;
+//$flight-color--product: $blue-700 !default;
+//$generic-color--product: $orange-700 !default;
+//$transfer-color--product: $green-700 !default;
+$tour-color--product: $red-700 !default;
+
+
+//Header and Summary Header
+$central-header: $central-brand-primary;
+$central-header-content-color: $white-color;
+$central-summary-header: #f9f9f9 !default;
+$central-content-body-color: $white-color !default;
+
+$central-page-summery-lbl-border-color: #d6d6d6 !default;
+
+$font-color:#66615b !default;
+
+/* Booking Summary */
+$badge-danger-bg : #f5766c !default;
+//$badge-success-bg : #27bfc2;
+$badge-default-bg : #fff;
+$badge-undefined-bg : $ma-text-color__secondary !default;
+$badge-font-color : #fff;
+$badge-font-color_danger : #b6605a !default;
+$badge-middle-color: $no-color--state;
+$unavailable-state-bg : #f5766c !default;
+$unavailable-state-dark-bg : #b1554e !default;
+$badge-middle-color: $no-color--state !default;
+
+$default-state-bg : #fff !default;
+$default-state-dark-bg : #f5f5f5 !default;
+
+$default_mat_icon_color: #d0d4db !default;
+$separator-border-color: #d3d6d9 !default;
+$icon-color: #8b8b8b  !default;
+$chip_set_default: #797979 !default;
+
+$summary_themed_color: #f9d630;
+
+$primary-theme-font : $ma_color__primary;
+$secondary-theme-font : $ma_color__secondary;
+/* End of Booking Summary*/
+
+
+
+
+/*Floating Action Buttons */
+$fab-cancel-state : red !default;
+$fab-payment-state : red !default;
+$fab-task-state : red !default;
+$fab-refund-state : red !default;
+$fab-invoice-state : red !default;
+$fab-toggle-bg: red !default;
+/* End of Floating Action Buttons */
+
+// </TO BE REMOVED>=================================================================================================================
+
+
+
+//======================================================
+//                    NEW
+//======================================================
+
+
+
+/*$ma_color_footer :#454f58;*/
+
+
+
+//========== Status colors=================
+$ma_status_confirmed : $ma_color_secondary;
+$ma_status_cancelled : #f5766c;
+$ma_status_confirmed-multiple:#607d8b !default;
+$ma_status_provisional : #00bcd4;
+$ma_status_warning :#ff9800;
+$ma_status_tentative :#673ab7;
+$ma_status_provisional_multiple:#9c27b0 !default;
+$ma_status_good_availability : #2c95dc !default;
+$ma_status_few_availability : #f44336 !default;
+
+
+
+//==========Text Colors================
+$ma_text_color_primary:#E91E63 !default;
+$ma_text_color_secondary :$ma_color_secondary !default;
+$ma_text_color_tertiary: #CDDC39 !default;
+$ma_text-color_quaternary:$ma_color_primary !default;
+$ma_text_color_error :#af564e ;
+$ma_text_color: #6f6f6f !default;
+
+$badge-success-bg: $ma_color_secondary !default;
+
+
+
+//=========Button Colors=================
+$ma_color_btn_default:$ma_color_white;
+$ma_color_btn_active:$ma-color_primary;
+$ma_color_btn_disabled:#ebebeb;
+$ma_color_btn_outline : #91a0ad;
+$ma_color_icon_font:$ma_text_color_tertiary;
+$ma_color_fab: $ma_color_accent;
+$ma_color_mini_fab: $ma_color_secondary ;
+$ma_color_frozen : $ma_status_cancelled;
+
+
+//Border line color.........................................
+$ma-border-color:#e0e0e0 !default;
+$ma_border_color_default: #ccc !default;
+$ma_border-color_tertiary: #ddd !default;
+
+
+//---Font Awesome variable--
+$fa-font-path: "./shared/theme/ccs-default-theme/font/font-awesome/fonts";
+
+// Variables from classes
+//$danger_color : #f5766c;
+//$success_color : #26a69a;
+//$plain_color : white;
+
+$popup_heading_color : $summary_themed_color !default;
+$popup_icon_color : $ma-text-color__secondary !default;
+$icon_color_darker: #393c41 !default;
+$popup_main_icon: $ma_color_white !default;
+
+$background-color_light: #f6f6f6 !default;
+$light_background: #f1f5f8 !default;
+$lighter_background: #fafafa !default;
+$light_background_header: #cbdfec !default;
+$background-color: #e3e3e3 !default;
+$dark_background: #343e47 !default;
+$background-color_hover_default: #454545 !default;
+$background-color_hover: #03a9f4 !default;
+$expansion_header_color: #eceff1 !default;
+$expansion_header_secondary: #f4f4f4 !default;
+$table_background-color: #fefbf2 !default;
+$liner_gradient_background: #e7e9ff !default;
+$loader_background_color: #2dbff9 !default;
+
+$floating_button: #555555 !default;
+
+
+
+$chip_default_color: #444 !default;
+
+
+$doc-des: #263238 !default;
+$doc-sub: #78909c !default;

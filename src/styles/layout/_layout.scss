@@ -1,0 +1,10 @@
+html, body { height: 100%; }
+.mat-drawer-container{
+    &.library-drawer{
+        min-height: 100vh;
+        .component-viewport{
+            //display: flex;
+            padding: 30px;
+        }
+    }
+}

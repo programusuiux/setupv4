@@ -1,0 +1,27 @@
+.ma-top-header{
+    background-color: #F8F8F8;
+    padding: 10px 25px;
+    .top-header-label{
+        padding-right: 20px;
+        border-right: 1px dotted #000;
+        margin-right: 20px;
+    }
+    .profile-avatar{
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        overflow: hidden;
+        img{
+            height: 30px;
+            width: 30px;
+        }
+    }
+    .mat-chip{
+        color: #AA9393;
+        background-color: #F8F8F8;
+        font-size: 14px !important;
+        font-weight: 400 !important;
+        line-height: 16px;
+        border:1px solid #CACACA;
+    }
+}
