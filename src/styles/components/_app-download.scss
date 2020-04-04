@@ -1,7 +1,36 @@
 .ma-app-download{
-    background-color: #bfbfbf;
-    padding: 15px;
+    min-height: 200px;
+    background-color: #BDBDBD;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
     .col-1{
         border-right: 1px dotted #fff;
+        margin-right: 30px;
+        min-width: 200px;
+    }
+    .section-header--small{
+        color: #fff;
+        h1{
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+    }
+    .logo-section{
+        img{
+            width: 200px;
+            height: 65px;
+            margin-right: 20px;
+        }
+    }
+    .background-logo{
+        position: absolute;
+        right: 120px;
+        bottom: -88px;
+        img{
+            width: 250px;
+        }
     }
 }

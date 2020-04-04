@@ -38,7 +38,9 @@ $background-item:#fff;
 .ma-txt__quaternary {
   color: $ma_text-color_quaternary !important;
 }
-
+.ma-txt__white {
+  color: $background-item !important;
+}
 
 //State link colors...........................................
 .ma-link--primary{
@@ -290,14 +292,14 @@ fieldset.demo{
   }
   h4.ma__heading-4 {
     @include typo-display-1;
-    font-size:16px;
+    font-size:18px;
     margin-top: 0;
     margin-bottom: 0;
   }
   .ma__subtitle-1 {
     @include typo-headline;
-    font-size: 14px ;
-    line-height: 14px;
+    font-size: 16px ;
+    line-height: 16px;
     margin-top: 0;
     margin-bottom: 0;
 
@@ -396,11 +398,12 @@ p {
   @include typo-body-2;
   @extend %tc-ellipsis;
   line-height: 1.5;
-
+  white-space: normal;
   &-small{
+    font-size: 14px !important;
     @include typo-body-2;
     @extend %tc-ellipsis;
-    font-size: 14px !important;
+    
   }
 
   &-large{
@@ -415,7 +418,7 @@ p {
   @include typo-body-1;
   @extend %tc-ellipsis;
   //margin-bottom: 10px;
-
+  white-space: normal;
   &-small{
     font-size: 14px;
    // @include typo-body-1;

@@ -1,11 +1,34 @@
 .ma-image-card-full{
-    background-color: #dedede;
-    min-height: 450px;
-    padding: 30px;
+    background: linear-gradient( rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25) ), url('https://jooinn.com/images/girl-using-mobile-2.png') no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    padding: 30px 70px;
+    .card-title{
+        font-size: 50px;
+        font-weight: 600;
+        margin: 30px 0px;
+    }
+    .card-description{
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
     .btn-learn-more{
-        border-radius: 18px;
+        border-radius: 28px;
         background-color: #E91E63;
         color: #fff;
         margin: 20px 0px;
+        font-size: 30px;
+        padding: 10px 30px;
+    }
+    .card-logo{
+        background-color: #fff;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 5px solid #F8F8F8;
     }
 }

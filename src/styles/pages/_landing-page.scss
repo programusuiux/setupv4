@@ -4,17 +4,40 @@
         margin-bottom: 30px;
     }
     .ma-inner-header{
-        margin-bottom: 20px;
+        margin-bottom: 50px;
+    }
+    .carousel-container{
+        margin-bottom: 50px;
+        .carousel-item{
+            max-height: 500px;
+        }
     }
     .section-header{
         margin-bottom: 20px;
+        h1{
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        &--small{
+            margin-bottom: 20px;
+            h2{
+                margin-bottom: 10px;
+            }
+        }
     }
     .featured-favs{
+        margin-bottom: 50px;
+    }
+    .featured-favs-cards{
         margin-bottom: 20px;
         flex-wrap: wrap;
         .ma-image-card--primary{
             margin:5px;
         }
+    }
+    .all-available{
+        margin-top: 10px;
+        margin-bottom: 30px;
     }
     .recent-section{
         border-top: 5px solid #E91E63;
@@ -22,10 +45,20 @@
         margin-bottom: 20px;
         .recent-cards{
             flex-wrap: wrap;
+            >.ma_flex__item:nth-child(odd){
+                .ma-image-card--primary{
+                    margin-left: 0px;
+                }
+            }
+            >.ma_flex__item:nth-child(even){
+                .ma-image-card--primary{
+                    margin-right: 0px;
+                }
+            }
         }
         .ma-image-card--primary{
             margin:5px;
-            max-width: 275px;
+            max-width: 265px;
             min-width: unset;
         }
     }
@@ -35,11 +68,39 @@
         margin-bottom: 20px;
         .near-me-cards{
             flex-wrap: wrap;
+            >.ma_flex__item:nth-child(odd){
+                .ma-image-card--primary{
+                    margin-left: 0px;
+                }
+            }
+            >.ma_flex__item:nth-child(even){
+                .ma-image-card--primary{
+                    margin-right: 0px;
+                }
+            }
         }
         .ma-image-card--primary{
             margin:5px;
-            max-width: 275px;
+            max-width: 265px;
             min-width: unset;
         }
+    }
+    .your-fav-section{
+        margin-bottom: 50px;
+        .ma-image-card--secondary{
+            min-width: unset;
+        }
+        .ma-col-1{
+            margin-right: 10px;
+        }
+        .ma-col-2{
+            margin:0 10px;
+        }
+        .ma-col-3{
+            margin-left: 10px;
+        }
+    }
+    .ma-app-download{
+        margin-bottom: 50px;
     }
 }

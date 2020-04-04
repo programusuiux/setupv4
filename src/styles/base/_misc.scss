@@ -87,3 +87,15 @@
     }
   
   }
+  .container-fluid{
+    padding: 0px;
+  }
+    .container{
+    padding: 0px;
+  }
+.__link{
+  &:hover{
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
