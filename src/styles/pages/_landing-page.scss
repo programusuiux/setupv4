@@ -32,7 +32,10 @@
         margin-bottom: 20px;
         flex-wrap: wrap;
         .ma-image-card--primary{
-            margin:5px;
+            //margin:5px;
+        }
+        .card-image{
+            //margin:5px;
         }
     }
     .all-available{
@@ -58,7 +61,7 @@
         }
         .ma-image-card--primary{
             margin:5px;
-            max-width: 265px;
+            max-width: 262px;
             min-width: unset;
         }
     }
@@ -81,7 +84,7 @@
         }
         .ma-image-card--primary{
             margin:5px;
-            max-width: 265px;
+            max-width: 262px;
             min-width: unset;
         }
     }

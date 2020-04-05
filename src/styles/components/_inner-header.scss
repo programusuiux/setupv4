@@ -43,4 +43,24 @@
             top: -5px;
         }
     }
+    .logo-col{
+        @include respond-to("x-small") {
+            margin-bottom: 20px;
+            justify-content: center;
+        }
+        @include respond-to("medium") {
+            margin-bottom: 0px;
+            justify-content: flex-start;
+        }    
+    }
+    .cart-total-col{
+        @include respond-to("x-small") {
+            margin-top: 20px;
+            justify-content: flex-end;
+        }
+        @include respond-to("medium") {
+            margin-top: 0px;
+            justify-content: flex-start;
+        }
+    }
 }
