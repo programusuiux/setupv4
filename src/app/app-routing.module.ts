@@ -10,6 +10,7 @@ import {MaLandingPageComponent} from './ma-landing-page/ma-landing-page.componen
 import {MaAppDownloadComponent} from './ma-app-download/ma-app-download.component';
 import {MaImageCardSecondaryComponent} from './ma-image-card-secondary/ma-image-card-secondary.component';
 import {MaFooterComponent} from './ma-footer/ma-footer.component';
+import {MaCarouselComponent} from './ma-carousel/ma-carousel.component';
 
 
 const routes: Routes = [
@@ -22,7 +23,8 @@ const routes: Routes = [
   { path: 'image-card-secondary', component: MaImageCardSecondaryComponent },
   { path: 'landing-page', component: MaLandingPageComponent },
   { path: 'download-component', component: MaAppDownloadComponent },
-  { path: 'footer', component: MaFooterComponent }
+  { path: 'footer', component: MaFooterComponent },
+  { path: 'carousel', component: MaCarouselComponent }
 ];
 
 @NgModule({

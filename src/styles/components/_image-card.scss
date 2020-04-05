@@ -1,12 +1,34 @@
 .ma-image-card{
     &--primary{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         background-color: #b4b4b4;
         padding: 15px;
         min-width: 300px;
+        min-height: 200px;
+        background: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.50) ), url('https://previews.123rf.com/images/stockbroker/stockbroker1411/stockbroker141100098/33469667-group-of-young-friends-shopping-outdoors-together.jpg');
+        background-size: contain;
+        background-size: cover;
+        
+        .heart-icon{
+            color: #E91E63;
+        }
+        .star-icon{
+            color:#E91E63;
+        }
+        .card-details-section{
+            color: #fff;
+            i{
+                font-size: 16px;
+            }
+        }
     }
     &--secondary{
         padding:15px;
-        background-color: #b4b4b4;
+        background: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.50) ), url('https://www.crushpixel.com/static12/preview2/food-ingredients-spices-cooking-delicious-802207.jpg') center;
+        background-size: contain;
+        background-size: cover;
         min-height: 150px;
         .card-inner-wrapper{
             padding: 15px;
@@ -16,4 +38,7 @@
             width: 100%;
         }
     }
+}
+.secondary-card-details{
+    margin-top: 20px;
 }

@@ -1,13 +1,19 @@
 .ma-top-categories{
     position: relative;
-    bottom: 136px;
+    bottom: 160px;
     margin-right: 50px;
     margin-left: 50px;
+    .section-header--small{
+        h1{
+            margin-bottom: 10px;
+        }
+    }
     .top-categories-header{
         margin-right: 20px;
         margin-left: 20px;
-        padding: 20px 0px;
+        padding: 40px 0px;
         background-color: #ffffff;
+        margin-bottom: 0px !important;
     }
     .top-cat-middle-col{
         background-color: #ffffff;
@@ -18,13 +24,13 @@
     .triangle-left{
         width: 0;
         height: 0px;
-        border-top: 100px solid #bfbfbf;
+        border-top: 100px solid #BCBCBC;
         border-left: 20px solid transparent;
     }
     .triangle-right{
         width: 0;
         height: 0px;
-        border-top: 100px solid #bfbfbf;
+        border-top: 100px solid #BCBCBC;
         border-right: 20px solid transparent;
     }
     .cat-item{
