@@ -1,0 +1,272 @@
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('~/assets/fonts/icomoon/icomoon.eot');
+    src:  url('~/assets/fonts/icomoon/icomoon.eot') format('embedded-opentype'),
+      url('~/assets/fonts/icomoon/icomoon.ttf') format('truetype'),
+      url('~/assets/fonts/icomoon/icomoon.woff') format('woff'),
+      url('~/assets/fonts/icomoon/icomoon.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="ma-"], [class*=" ma-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    // speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .ma-add:before {
+    content: "\e900";
+  }
+  .ma-address:before {
+    content: "\e901";
+  }
+  .ma-barcode:before {
+    content: "\e902";
+  }
+  .ma-bill:before {
+    content: "\e903";
+  }
+  .ma-brain:before {
+    content: "\e904";
+  }
+  .ma-calendar:before {
+    content: "\e905";
+  }
+  .ma-calendar-1:before {
+    content: "\e906";
+  }
+  .ma-calendar-3:before {
+    content: "\e907";
+  }
+  .ma-change-2:before {
+    content: "\e908";
+  }
+  .ma-change:before {
+    content: "\e909";
+  }
+  .ma-clock:before {
+    content: "\e90a";
+  }
+  .ma-close:before {
+    content: "\e90b";
+  }
+  .ma-close-2:before {
+    content: "\e90c";
+  }
+  .ma-countdown:before {
+    content: "\e90d";
+  }
+  .ma-delivery:before {
+    content: "\e90e";
+  }
+  .ma-director:before {
+    content: "\e90f";
+  }
+  .ma-down-arrow:before {
+    content: "\e910";
+  }
+  .ma-download:before {
+    content: "\e911";
+  }
+  .ma-dress:before {
+    content: "\e912";
+  }
+  .ma-event:before {
+    content: "\e913";
+  }
+  .ma-facebook:before {
+    content: "\e914";
+  }
+  .ma-filter:before {
+    content: "\e915";
+  }
+  .ma-florist:before {
+    content: "\e916";
+  }
+  .ma-fullscreen:before {
+    content: "\e917";
+  }
+  .ma-gift:before {
+    content: "\e918";
+  }
+  .ma-heart:before {
+    content: "\e919";
+  }
+  .ma-home-run:before {
+    content: "\e91a";
+  }
+  .ma-image:before {
+    content: "\e91b";
+  }
+  .ma-instagram:before {
+    content: "\e91c";
+  }
+  .ma-leadership:before {
+    content: "\e91d";
+  }
+  .ma-list:before {
+    content: "\e91e";
+  }
+  .ma-list-2:before {
+    content: "\e91f";
+  }
+  .ma-list-3:before {
+    content: "\e920";
+  }
+  .ma-lock:before {
+    content: "\e921";
+  }
+  .ma-login:before {
+    content: "\e922";
+  }
+  .ma-minus:before {
+    content: "\e923";
+  }
+  .ma-money:before {
+    content: "\e924";
+  }
+  .ma-more:before {
+    content: "\e925";
+  }
+  .ma-next:before {
+    content: "\e926";
+  }
+  .ma-notebook:before {
+    content: "\e927";
+  }
+  .ma-notification:before {
+    content: "\e928";
+  }
+  .ma-open:before {
+    content: "\e929";
+  }
+  .ma-optician:before {
+    content: "\e92a";
+  }
+  .ma-order:before {
+    content: "\e92b";
+  }
+  .ma-order-2:before {
+    content: "\e92c";
+  }
+  .ma-paperclip:before {
+    content: "\e92d";
+  }
+  .ma-pay:before {
+    content: "\e92e";
+  }
+  .ma-phone:before {
+    content: "\e92f";
+  }
+  .ma-plan:before {
+    content: "\e930";
+  }
+  .ma-play:before {
+    content: "\e931";
+  }
+  .ma-play-button:before {
+    content: "\e932";
+  }
+  .ma-plus:before {
+    content: "\e933";
+  }
+  .ma-plus-2:before {
+    content: "\e934";
+  }
+  .ma-plus-3:before {
+    content: "\e935";
+  }
+  .ma-problem:before {
+    content: "\e936";
+  }
+  .ma-product:before {
+    content: "\e937";
+  }
+  .ma-product-2:before {
+    content: "\e938";
+  }
+  .ma-qr:before {
+    content: "\e939";
+  }
+  .ma-question:before {
+    content: "\e93a";
+  }
+  .ma-question-2:before {
+    content: "\e93b";
+  }
+  .ma-restaurant:before {
+    content: "\e93c";
+  }
+  .ma-return:before {
+    content: "\e93d";
+  }
+  .ma-right-chevron:before {
+    content: "\e93e";
+  }
+  .ma-sandwich:before {
+    content: "\e93f";
+  }
+  .ma-search:before {
+    content: "\e940";
+  }
+  .ma-send:before {
+    content: "\e941";
+  }
+  .ma-shopping-bag:before {
+    content: "\e942";
+  }
+  .ma-signage:before {
+    content: "\e943";
+  }
+  .ma-speedometer:before {
+    content: "\e944";
+  }
+  .ma-star:before {
+    content: "\e945";
+  }
+  .ma-supermarket:before {
+    content: "\e946";
+  }
+  .ma-support:before {
+    content: "\e947";
+  }
+  .ma-tick:before {
+    content: "\e948";
+  }
+  .ma-timer:before {
+    content: "\e949";
+  }
+  .ma-twitter:before {
+    content: "\e94a";
+  }
+  .ma-upload-1:before {
+    content: "\e94b";
+  }
+  .ma-user:before {
+    content: "\e94c";
+  }
+  .ma-user-2:before {
+    content: "\e94d";
+  }
+  .ma-user-3:before {
+    content: "\e94e";
+  }
+  .ma-work:before {
+    content: "\e94f";
+  }
+  .ma-youtube:before {
+    content: "\e950";
+  }
+  
