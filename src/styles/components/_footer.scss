@@ -42,8 +42,26 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    >.ma_flex--container{
+        flex-wrap: wrap;
+    }
+    .footer-quick-link-wrapper{
+        @include respond-to("x-small") {
+            margin: 15px 0px;
+        }
+        @include respond-to("medium") {
+            margin: 0px;
+        }
+    }
     img{
-        width: 500px;
+        @include respond-to("x-small") {
+            margin: 15px 0px;
+            width: 90%;
+        }
+        @include respond-to("medium") {
+            margin: 0px;
+            width: 500px;
+        }
     }
     .quick-link{
         padding-left: 5px;

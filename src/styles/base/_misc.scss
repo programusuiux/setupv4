@@ -89,9 +89,15 @@
   }
   .container-fluid{
     padding: 0px;
+    // @include respond-to("x-large") {
+    //   max-width: 1900px !important;
+    // }
   }
     .container{
     padding: 0px;
+    // @include respond-to("x-large") {
+    //   max-width: 1900px !important;
+    // }
   }
 .__link{
   &:hover{
