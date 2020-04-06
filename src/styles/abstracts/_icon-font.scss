@@ -11,7 +11,7 @@
     font-display: block;
   }
   
-  [class^="ma-"], [class*=" ma-"] {
+  [class^="ma-ico-"], [class*=" ma-ico-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
     // speak: none;
@@ -26,247 +26,247 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
-  .ma-add:before {
+  .ma-ico-add:before {
     content: "\e900";
   }
-  .ma-address:before {
+  .ma-ico-address:before {
     content: "\e901";
   }
-  .ma-barcode:before {
+  .ma-ico-barcode:before {
     content: "\e902";
   }
-  .ma-bill:before {
+  .ma-ico-bill:before {
     content: "\e903";
   }
-  .ma-brain:before {
+  .ma-ico-brain:before {
     content: "\e904";
   }
-  .ma-calendar:before {
+  .ma-ico-calendar:before {
     content: "\e905";
   }
-  .ma-calendar-1:before {
+  .ma-ico-calendar-1:before {
     content: "\e906";
   }
-  .ma-calendar-3:before {
+  .ma-ico-calendar-3:before {
     content: "\e907";
   }
-  .ma-change-2:before {
+  .ma-ico-change-2:before {
     content: "\e908";
   }
-  .ma-change:before {
+  .ma-ico-change:before {
     content: "\e909";
   }
-  .ma-clock:before {
+  .ma-ico-clock:before {
     content: "\e90a";
   }
-  .ma-close:before {
+  .ma-ico-close:before {
     content: "\e90b";
   }
-  .ma-close-2:before {
+  .ma-ico-close-2:before {
     content: "\e90c";
   }
-  .ma-countdown:before {
+  .ma-ico-countdown:before {
     content: "\e90d";
   }
-  .ma-delivery:before {
+  .ma-ico-delivery:before {
     content: "\e90e";
   }
-  .ma-director:before {
+  .ma-ico-director:before {
     content: "\e90f";
   }
-  .ma-down-arrow:before {
+  .ma-ico-down-arrow:before {
     content: "\e910";
   }
-  .ma-download:before {
+  .ma-ico-download:before {
     content: "\e911";
   }
-  .ma-dress:before {
+  .ma-ico-dress:before {
     content: "\e912";
   }
-  .ma-event:before {
+  .ma-ico-event:before {
     content: "\e913";
   }
-  .ma-facebook:before {
+  .ma-ico-facebook:before {
     content: "\e914";
   }
-  .ma-filter:before {
+  .ma-ico-filter:before {
     content: "\e915";
   }
-  .ma-florist:before {
+  .ma-ico-florist:before {
     content: "\e916";
   }
-  .ma-fullscreen:before {
+  .ma-ico-fullscreen:before {
     content: "\e917";
   }
-  .ma-gift:before {
+  .ma-ico-gift:before {
     content: "\e918";
   }
-  .ma-heart:before {
+  .ma-ico-heart:before {
     content: "\e919";
   }
-  .ma-home-run:before {
+  .ma-ico-home-run:before {
     content: "\e91a";
   }
-  .ma-image:before {
+  .ma-ico-image:before {
     content: "\e91b";
   }
-  .ma-instagram:before {
+  .ma-ico-instagram:before {
     content: "\e91c";
   }
-  .ma-leadership:before {
+  .ma-ico-leadership:before {
     content: "\e91d";
   }
-  .ma-list:before {
+  .ma-ico-list:before {
     content: "\e91e";
   }
-  .ma-list-2:before {
+  .ma-ico-list-2:before {
     content: "\e91f";
   }
-  .ma-list-3:before {
+  .ma-ico-list-3:before {
     content: "\e920";
   }
-  .ma-lock:before {
+  .ma-ico-lock:before {
     content: "\e921";
   }
-  .ma-login:before {
+  .ma-ico-login:before {
     content: "\e922";
   }
-  .ma-minus:before {
+  .ma-ico-minus:before {
     content: "\e923";
   }
-  .ma-money:before {
+  .ma-ico-money:before {
     content: "\e924";
   }
-  .ma-more:before {
+  .ma-ico-more:before {
     content: "\e925";
   }
-  .ma-next:before {
+  .ma-ico-next:before {
     content: "\e926";
   }
-  .ma-notebook:before {
+  .ma-ico-notebook:before {
     content: "\e927";
   }
-  .ma-notification:before {
+  .ma-ico-notification:before {
     content: "\e928";
   }
-  .ma-open:before {
+  .ma-ico-open:before {
     content: "\e929";
   }
-  .ma-optician:before {
+  .ma-ico-optician:before {
     content: "\e92a";
   }
-  .ma-order:before {
+  .ma-ico-order:before {
     content: "\e92b";
   }
-  .ma-order-2:before {
+  .ma-ico-order-2:before {
     content: "\e92c";
   }
-  .ma-paperclip:before {
+  .ma-ico-paperclip:before {
     content: "\e92d";
   }
-  .ma-pay:before {
+  .ma-ico-pay:before {
     content: "\e92e";
   }
-  .ma-phone:before {
+  .ma-ico-phone:before {
     content: "\e92f";
   }
-  .ma-plan:before {
+  .ma-ico-plan:before {
     content: "\e930";
   }
-  .ma-play:before {
+  .ma-ico-play:before {
     content: "\e931";
   }
-  .ma-play-button:before {
+  .ma-ico-play-button:before {
     content: "\e932";
   }
-  .ma-plus:before {
+  .ma-ico-plus:before {
     content: "\e933";
   }
-  .ma-plus-2:before {
+  .ma-ico-plus-2:before {
     content: "\e934";
   }
-  .ma-plus-3:before {
+  .ma-ico-plus-3:before {
     content: "\e935";
   }
-  .ma-problem:before {
+  .ma-ico-problem:before {
     content: "\e936";
   }
-  .ma-product:before {
+  .ma-ico-product:before {
     content: "\e937";
   }
-  .ma-product-2:before {
+  .ma-ico-product-2:before {
     content: "\e938";
   }
-  .ma-qr:before {
+  .ma-ico-qr:before {
     content: "\e939";
   }
-  .ma-question:before {
+  .ma-ico-question:before {
     content: "\e93a";
   }
-  .ma-question-2:before {
+  .ma-ico-question-2:before {
     content: "\e93b";
   }
-  .ma-restaurant:before {
+  .ma-ico-restaurant:before {
     content: "\e93c";
   }
-  .ma-return:before {
+  .ma-ico-return:before {
     content: "\e93d";
   }
-  .ma-right-chevron:before {
+  .ma-ico-right-chevron:before {
     content: "\e93e";
   }
-  .ma-sandwich:before {
+  .ma-ico-sandwich:before {
     content: "\e93f";
   }
-  .ma-search:before {
+  .ma-ico-search:before {
     content: "\e940";
   }
-  .ma-send:before {
+  .ma-ico-send:before {
     content: "\e941";
   }
-  .ma-shopping-bag:before {
+  .ma-ico-shopping-bag:before {
     content: "\e942";
   }
-  .ma-signage:before {
+  .ma-ico-signage:before {
     content: "\e943";
   }
-  .ma-speedometer:before {
+  .ma-ico-speedometer:before {
     content: "\e944";
   }
-  .ma-star:before {
+  .ma-ico-star:before {
     content: "\e945";
   }
-  .ma-supermarket:before {
+  .ma-ico-supermarket:before {
     content: "\e946";
   }
-  .ma-support:before {
+  .ma-ico-support:before {
     content: "\e947";
   }
-  .ma-tick:before {
+  .ma-ico-tick:before {
     content: "\e948";
   }
-  .ma-timer:before {
+  .ma-ico-timer:before {
     content: "\e949";
   }
-  .ma-twitter:before {
+  .ma-ico-twitter:before {
     content: "\e94a";
   }
-  .ma-upload-1:before {
+  .ma-ico-upload-1:before {
     content: "\e94b";
   }
-  .ma-user:before {
+  .ma-ico-user:before {
     content: "\e94c";
   }
-  .ma-user-2:before {
+  .ma-ico-user-2:before {
     content: "\e94d";
   }
-  .ma-user-3:before {
+  .ma-ico-user-3:before {
     content: "\e94e";
   }
-  .ma-work:before {
+  .ma-ico-work:before {
     content: "\e94f";
   }
-  .ma-youtube:before {
+  .ma-ico-youtube:before {
     content: "\e950";
   }
   
