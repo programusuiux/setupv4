@@ -16,6 +16,12 @@ import { MaAppDownloadComponent } from './ma-app-download/ma-app-download.compon
 import { MaImageCardSecondaryComponent } from './ma-image-card-secondary/ma-image-card-secondary.component';
 import { MaFooterComponent } from './ma-footer/ma-footer.component';
 import { MaCarouselComponent } from './ma-carousel/ma-carousel.component';
+import { MaVendorServicesComponent } from './ma-vendor-services/ma-vendor-services.component';
+import { MaVendorPageComponent } from './ma-vendor-page/ma-vendor-page.component';
+import { MaImageCardDetailedComponent } from './ma-image-card-detailed/ma-image-card-detailed.component';
+import { MaFloatingContainerComponent } from './ma-floating-container/ma-floating-container.component';
+import { MaSectionTabsComponent } from './ma-section-tabs/ma-section-tabs.component';
+import { MaImageCardDescribedComponent } from './ma-image-card-described/ma-image-card-described.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +37,13 @@ import { MaCarouselComponent } from './ma-carousel/ma-carousel.component';
     MaAppDownloadComponent,
     MaImageCardSecondaryComponent,
     MaFooterComponent,
-    MaCarouselComponent
+    MaCarouselComponent,
+    MaVendorServicesComponent,
+    MaVendorPageComponent,
+    MaImageCardDetailedComponent,
+    MaFloatingContainerComponent,
+    MaSectionTabsComponent,
+    MaImageCardDescribedComponent
   ],
   imports: [
     BrowserModule,

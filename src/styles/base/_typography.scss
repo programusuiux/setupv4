@@ -61,7 +61,10 @@ $background-item:#fff;
 }
 
 
-
+.ma-floating-label{
+  font-size: 12px !important;
+  line-height: 12px;
+}
 .ma-link--secondary{
   @include typo-body-1();
   font-style: normal;

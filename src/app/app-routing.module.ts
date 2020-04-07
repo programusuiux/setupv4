@@ -11,6 +11,12 @@ import {MaAppDownloadComponent} from './ma-app-download/ma-app-download.componen
 import {MaImageCardSecondaryComponent} from './ma-image-card-secondary/ma-image-card-secondary.component';
 import {MaFooterComponent} from './ma-footer/ma-footer.component';
 import {MaCarouselComponent} from './ma-carousel/ma-carousel.component';
+import {MaVendorServicesComponent} from './ma-vendor-services/ma-vendor-services.component';
+import {MaVendorPageComponent} from './ma-vendor-page/ma-vendor-page.component';
+import {MaImageCardDetailedComponent} from './ma-image-card-detailed/ma-image-card-detailed.component';
+import {MaFloatingContainerComponent} from './ma-floating-container/ma-floating-container.component';
+import {MaSectionTabsComponent} from './ma-section-tabs/ma-section-tabs.component';
+import {MaImageCardDescribedComponent} from './ma-image-card-described/ma-image-card-described.component';
 
 
 const routes: Routes = [
@@ -24,7 +30,13 @@ const routes: Routes = [
   { path: 'landing-page', component: MaLandingPageComponent },
   { path: 'download-component', component: MaAppDownloadComponent },
   { path: 'footer', component: MaFooterComponent },
-  { path: 'carousel', component: MaCarouselComponent }
+  { path: 'carousel', component: MaCarouselComponent },
+  { path: 'vendor-services', component: MaVendorServicesComponent },
+  { path: 'vendor-page', component: MaVendorPageComponent },
+  { path: 'image-card-detailed', component: MaImageCardDetailedComponent },
+  { path: 'floating-container', component: MaFloatingContainerComponent },
+  { path: 'section-tabs', component: MaSectionTabsComponent },
+  { path: 'image-card-described', component: MaImageCardDescribedComponent }
 ];
 
 @NgModule({

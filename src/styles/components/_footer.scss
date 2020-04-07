@@ -3,13 +3,38 @@
     padding: 60px 20px;
     .ma-col-1, .ma-col-2, .ma-col-3{
         border-right: 1px dotted #fff;
-        padding-left: 40px;
+        @include respond-to("x-small") {
+            padding-left: 15px;
+            margin: 10px 0px;
+        }
+        @include respond-to("medium") {
+            padding-left: 40px;
+            margin: 0px;
+        }
+    }
+    .ma-col-2{
+        @include respond-to("x-small") {
+            border-right: 0;
+        }
+        @include respond-to("medium") {
+            border-right: 1px dotted #fff;
+        }
     }
     .ma-col-4{
         button{
             background-color: #6A6A6A;
             height: 50px;
             color: #fff;
+        }
+        h3{
+            @include respond-to("x-small") {
+                position: relative;
+                top: 10px;
+            }
+            @include respond-to("medium") {
+                position: relative;
+                top: 0px;
+            }
         }
     }
     .footer-links{
@@ -25,6 +50,12 @@
     .social-media-links{
         display: flex;
         margin-bottom: 30px;
+        @include respond-to("x-small") {
+            margin-bottom: 10px;
+        }
+        @include respond-to("medium") {
+            margin-bottom: 30px;
+        }
         .link-circle{
             border: 2px solid #F8F8F810;
             height: 50px;
@@ -34,6 +65,12 @@
             align-items: center;
             justify-content: center;
             color: #F8F8F8;
+            @include respond-to("x-small") {
+                margin: 5px;
+            }
+            @include respond-to("medium") {
+                margin:0 5px 0 0;
+            }
         }
     }
 }

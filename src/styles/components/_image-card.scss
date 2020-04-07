@@ -43,6 +43,18 @@
             }
         }
     }
+    &--described{
+        padding: 15px;
+        min-width: 300px;
+        min-height: 200px;
+        position: relative;
+        .heart-icon{
+            color: #E91E63;
+        }
+        .star-icon{
+            color:#E91E63;
+        }
+    }
     &--secondary{
         padding:15px;
         min-height: 150px;
@@ -55,6 +67,59 @@
             align-items: flex-end;
             width: 100%;
         }
+    }
+    &--detailed{
+        padding:15px;
+        min-height: 150px;
+        position: relative;
+        transition: all 1s ease-out;
+        .card-inner-wrapper{
+            padding: 15px;
+            border:1px dotted #fff;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            position: relative;
+            justify-content: center;
+            .item-name{
+                border-right: 1px dotted #fff;
+                padding-right: 20px;
+                max-width: 170px;
+                h3{
+                    white-space: normal;
+                    font-size: 20px;
+                    line-height: 20px;
+                }
+            }
+            .item-price{
+                padding-left: 20px;
+                h3{
+                    font-size: 32px;
+                    line-height: 32px;
+                }
+            }
+            .item-label{
+                position: absolute;
+                bottom: 0;
+                right: 7px;
+            }
+        }
+    }
+}
+.described-card-details{
+    padding: 15px;
+    padding-top: 5px;
+    i{
+        font-size: 16px;
+    }
+    .star-icon{
+        color:#E91E63;
+    }
+    .left-col{
+        min-height: 80px;
+    }
+    .right-col{
+        min-height: 80px;
     }
 }
 .secondary-card-details{

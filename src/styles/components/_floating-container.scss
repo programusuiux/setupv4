@@ -1,0 +1,23 @@
+.ma-floating-container{
+    position: relative;
+    top: -100px;
+    .middle-col{
+        background-color: #fff;
+    }
+    .triangle-left{
+        width: 0;
+        height: 0px;
+        border-top: 100px solid #BCBCBC;
+        border-left: 20px solid transparent;
+        position: relative;
+        top: 100px;
+    }
+    .triangle-right{
+        width: 0;
+        height: 0px;
+        border-top: 100px solid #BCBCBC;
+        border-right: 20px solid transparent;
+        position: relative;
+        top: 100px;
+    }
+}

@@ -1,5 +1,19 @@
 .carousel-inner{
     min-height: 500px;
+    display: flex;
+    .carousel-item{
+        max-height: unset;
+        img{
+            @include respond-to("x-small") {
+                max-height: unset !important;
+                height: 100%;
+            }
+            @include respond-to("medium") {
+                max-height: unset !important;
+                height: unset;
+            }
+        }
+    }
 }
 .carousel-description{
     position: absolute;
@@ -22,12 +36,40 @@
         border-radius: 18px;
         margin: 40px 0px;
     }
+    &--vendor{
+        position: absolute;
+        right: 0;
+        bottom: 50px;
+        left: 0;
+        z-index: 14;
+        margin-right: 10%;
+        margin-left: 10%;
+        color: #fff;
+        background-color: #00000096;
+        padding: 30px;
+        @include respond-to("x-small") {
+            margin-right: 0%;
+            margin-left: 0%;
+        }
+        @include respond-to("medium") {
+            margin-right: 10%;
+            margin-left: 10%;
+        }
+        .ratings{
+            margin: 10px 0px;
+        }
+        .btn-select{
+            max-width: 250px;
+            text-align: left;
+            background-color: #ffffff5c;
+            padding: 5px 15px;
+            margin-top: 15px;
+        }
+    }
 }
 .carousel-menu{
     display: flex;
     align-items: center;
-    margin-right: 15%;
-    margin-left: 15%;
     background-color: #000;
     color: #fff;
     position: absolute;
@@ -36,6 +78,16 @@
     left: 0;
     z-index: 15;
     min-height: 60px;
+    @include respond-to("x-small") {
+        margin-right: 0%;
+        margin-left: 0%;
+        flex-wrap: wrap;
+    }
+    @include respond-to("medium") {
+        margin-right: 15%;
+        margin-left: 15%;
+        flex-wrap: unset;
+    }
     .menu-item{
         min-height: 60px;
         display: flex;

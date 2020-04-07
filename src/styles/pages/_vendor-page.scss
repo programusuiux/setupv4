@@ -1,0 +1,115 @@
+.ma-vendor-page{
+    background-color: #fff;
+    .featured-favs{
+        margin-bottom: 50px;
+    }
+    .all-available{
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .featured-favs-cards{
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+        .ma-image-card--primary{
+            //margin:5px;
+        }
+        .card-image{
+            //margin:5px;
+        }
+    }
+    .section-header{
+        margin-bottom: 20px;
+        h1{
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        &--small{
+            margin-bottom: 20px;
+            h2{
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .ma-top-header{
+        margin-bottom: 30px;
+    }
+    .ma-inner-header{
+        margin-bottom: 50px;
+    }
+    .carousel-container{
+        margin-bottom: 50px;
+        .carousel-item{
+            max-height: 500px;
+        }
+    }
+    .carousel-description{
+        display: none;
+    }
+    .ma-image-card-full{
+        .img-vendor-page{
+            display: block;
+            object-fit: cover;
+            //background-image: linear-gradient(rgba(255,125,83,0.5), rgba(0,173,7,0.5));
+        }
+        .inner-wrapper{
+            display: none;
+        }
+        .inner-wrapper--vendor{
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            >.row{
+                margin: 0px;
+                width: 100%;
+            }
+            .left-col{
+                border-right: 1px solid #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img{
+                    width: 30%;
+                }
+            }
+            .right-col{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+    .ma-floating-container{
+        margin: 0 50px;
+        .middle-col{
+            padding: 30px;
+        }
+        .left-col{
+            padding: 30px 50px;
+            border-right: 1px solid #CACACA;
+            h2{
+                margin-bottom: 20px;
+            }
+        }
+        .right-col{
+            padding: 30px 50px;
+            h2{
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .ma-section-tabs{
+        margin: 0 15px;
+        margin-bottom: 50px;
+        // .described-card-wrapper{
+        //     max-width:350px;
+        // }
+    }
+    .featured-favs{
+        margin-top: 50px;
+    }
+    .ad-card-section{
+        >.ma_flex--container{
+            flex-wrap: wrap;
+        }
+    }
+}

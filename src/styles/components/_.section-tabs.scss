@@ -1,0 +1,61 @@
+.ma-section-tabs{
+    .section-title{
+        @include respond-to("x-small") {
+            display: block;
+         }
+         @include respond-to("medium") {
+             display: none;
+         }
+    }
+    .mat-tab-header{
+        border-bottom:0;
+    }
+    .mat-tab-labels{
+        justify-content: flex-end;
+        .mat-tab-label{
+            font-size: 20px;
+            line-height: 20px;
+        }
+        .mat-tab-disabled{
+            color: #000 !important;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 24px;
+            border-bottom: 0px;
+            position: absolute;
+            left: 0;
+            padding: 0px 10px;
+            @include respond-to("x-small") {
+               display: none;
+            }
+            @include respond-to("medium") {
+                display: block;
+            }
+        }
+        .mat-tab-label-active{
+            color: #FF5722;
+        }
+    }
+    .mat-ink-bar{
+        display: none !important;
+    }
+    .tab-divider{
+        height: 5px;
+        width: 100%;
+        background-color: #cacaca;
+        .tab-divider-colored{
+            height: 5px;
+            width: 10%;
+            background-color:#FF5722;
+        }
+    }
+    .ma-tab-body{
+        padding: 20px;
+        >.ma_flex--container{
+            flex-wrap: wrap;
+        }
+        .card-outer-wrapper{
+            margin:10px;
+        }
+    }
+}
