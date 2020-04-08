@@ -50,6 +50,20 @@
             //margin:5px;
         }
     }
+    .top-cat-container{
+        .all-available{
+            position: relative;
+            bottom: 100px;
+            @include respond-to("x-small") {
+                margin-right: 20px;
+                margin-left: 20px;
+            }
+            @include respond-to("medium") {
+                margin-right: 70px;
+                margin-left: 70px;
+            }
+        }   
+    }
     .all-available{
         margin-top: 10px;
         margin-bottom: 30px;
@@ -60,14 +74,15 @@
         margin-bottom: 20px;
         .recent-cards{
             flex-wrap: wrap;
+            margin: -5px;
             >.ma_flex__item:nth-child(odd){
                 .ma-image-card--primary{
-                    margin-left: 0px;
+                    //margin-left: 0px;
                 }
             }
             >.ma_flex__item:nth-child(even){
                 .ma-image-card--primary{
-                    margin-right: 0px;
+                    //margin-right: 0px;
                 }
             }
         }
@@ -112,13 +127,35 @@
             min-width: unset;
         }
         .ma-col-1{
-            margin-right: 10px;
+            @include respond-to("x-small") {
+                margin-right: 0px;
+                margin-bottom: 15px;
+            }
+            @include respond-to("medium") {
+                margin-right: 10px;
+            }
+            
         }
         .ma-col-2{
-            margin:0 10px;
+            @include respond-to("x-small") {
+                margin-left: 0px;
+                margin-right: 0px;
+                margin-bottom: 15px;
+            }
+            @include respond-to("medium") {
+                margin:0 10px;
+            }
         }
         .ma-col-3{
-            margin-left: 10px;
+            @include respond-to("x-small") {
+                margin-left: 0px;
+            }
+            @include respond-to("medium") {
+                margin-left: 10px;
+            }
+        }
+        .card-outer-wrapper{
+            margin: 0px;
         }
     }
     .ma-app-download{

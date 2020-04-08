@@ -22,6 +22,10 @@ import { MaImageCardDetailedComponent } from './ma-image-card-detailed/ma-image-
 import { MaFloatingContainerComponent } from './ma-floating-container/ma-floating-container.component';
 import { MaSectionTabsComponent } from './ma-section-tabs/ma-section-tabs.component';
 import { MaImageCardDescribedComponent } from './ma-image-card-described/ma-image-card-described.component';
+import { MaProductDetailsComponent } from './ma-product-details/ma-product-details.component';
+import { MaProductSelectComponent } from './ma-product-select/ma-product-select.component';
+import { MaImageCardVerticleComponent } from './ma-image-card-verticle/ma-image-card-verticle.component';
+import { MaProductPageComponent } from './ma-product-page/ma-product-page.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +47,11 @@ import { MaImageCardDescribedComponent } from './ma-image-card-described/ma-imag
     MaImageCardDetailedComponent,
     MaFloatingContainerComponent,
     MaSectionTabsComponent,
-    MaImageCardDescribedComponent
+    MaImageCardDescribedComponent,
+    MaProductDetailsComponent,
+    MaProductSelectComponent,
+    MaImageCardVerticleComponent,
+    MaProductPageComponent
   ],
   imports: [
     BrowserModule,

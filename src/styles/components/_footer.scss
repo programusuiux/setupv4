@@ -21,6 +21,12 @@
         }
     }
     .ma-col-4{
+        @include respond-to("x-small") {
+            padding-left: 15px;
+        }
+        @include respond-to("medium") {
+            padding-left: 40px;
+        }
         button{
             background-color: #6A6A6A;
             height: 50px;
@@ -69,7 +75,7 @@
                 margin: 5px;
             }
             @include respond-to("medium") {
-                margin:0 5px 0 0;
+                margin:0 10px 0 0;
             }
         }
     }

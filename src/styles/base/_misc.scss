@@ -105,3 +105,22 @@
     cursor: pointer;
   }
 }
+.mat-divider--dashed{
+  display: block;
+  margin: 10px 0px !important;
+  border-top-width: 1px;
+  border-top-style: dashed !important;
+  border-width: 2px;
+  border-top-color: #707070;
+}
+.ma-btn--large{
+  border-radius: 28px !important;
+  background-color: #E91E63;
+  color: #fff;
+  margin: 20px 0px !important;
+  font-size: 30px;
+  padding: 10px 30px !important;
+}
+.ma-verticle-separator{
+  margin: 0 10px;
+}

@@ -28,6 +28,33 @@
         >.ma_flex--container{
             flex-wrap: wrap;
         }
+        .row-1{
+            button{
+                border-top: 0px;
+                border-left: 0px;
+            }
+            .cat-item{
+                &:nth-last-child(1){
+                    button{
+                        border-right: 0px;
+                    }
+                }
+            }
+        }
+        .row-2{
+            button{
+                border-bottom: 0px;
+                border-left: 0px;
+                border-top: 0px;
+            }
+            .cat-item{
+                &:nth-last-child(1){
+                    button{
+                        border-right: 0px;
+                    }
+                }
+            }
+        }
     }
     .triangle-left{
         width: 0;
@@ -56,6 +83,7 @@
             height: 100%;
             width: 100%;
             border-radius: 0px;
+            min-height: 150px;
             &:hover{
                   i {
                     color: #E91E63;  
