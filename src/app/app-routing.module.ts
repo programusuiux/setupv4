@@ -21,6 +21,8 @@ import {MaImageCardDescribedComponent} from './ma-image-card-described/ma-image-
 import { MaProductSelectComponent } from './ma-product-select/ma-product-select.component';
 import {MaProductDetailsComponent} from './ma-product-details/ma-product-details.component';
 import {MaImageCardVerticleComponent} from './ma-image-card-verticle/ma-image-card-verticle.component';
+import {MaMenuComponent} from './ma-menu/ma-menu.component';
+import {MaCarouselSecondaryComponent} from './ma-carousel-secondary/ma-carousel-secondary.component';
 
 
 const routes: Routes = [
@@ -45,6 +47,8 @@ const routes: Routes = [
   { path: 'product-details', component: MaProductDetailsComponent },
   { path: 'product-select', component: MaProductSelectComponent },
   { path: 'image-card-verticle', component: MaImageCardVerticleComponent },
+  { path: 'menu', component: MaMenuComponent },
+  { path: 'carousel-secondary', component: MaCarouselSecondaryComponent },
 
 ];
 

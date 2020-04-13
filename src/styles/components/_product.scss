@@ -10,6 +10,14 @@
     }
     .rating{
         margin-bottom:10px;
+        .ma_flex__item{
+            @include respond-to("x-small") {
+                width: 100%;
+            }
+            @include respond-to("medium") {
+                width: 50%;
+            }
+        }
         i{
             color: #FF5722;
         }
@@ -56,6 +64,7 @@
         .mat-button-toggle-group{
             border:0px;
             overflow: visible;
+            flex-wrap: wrap;
             .mat-button-toggle{
                 white-space: nowrap;
                 position: relative;
@@ -72,6 +81,12 @@
                 font-weight: 500 !important;
                 color: #A1A7B8;
                 border: 1px solid #A1A7B8;
+                @include respond-to("x-small") {
+                    margin-bottom: 5px;
+                }
+                @include respond-to("medium") {
+                    margin-bottom: 0px;
+                }
                 &.mat-button-toggle-checked{
                     background-color: #FF5722;
                     color: #fff;

@@ -50,7 +50,13 @@
         }
     }
     .ma-tab-body{
-        padding: 20px;
+        
+        @include respond-to("x-small") {
+            padding: 0px;
+        }
+        @include respond-to("medium") {
+            padding: 20px;
+        }
         >.ma_flex--container{
             flex-wrap: wrap;
         }

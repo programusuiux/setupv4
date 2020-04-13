@@ -3,6 +3,22 @@
     .featured-favs{
         margin-bottom: 50px;
     }
+    .ma-menu{
+        position: absolute;
+        right: 0;
+        top: 0px;
+        left: 0;
+        @include respond-to("x-small") {
+            margin-right: 0%;
+            margin-left: 0%;
+            flex-wrap: wrap;
+        }
+        @include respond-to("medium") {
+            margin-right: 15%;
+            margin-left: 15%;
+            flex-wrap: unset;
+        }
+    }
     .all-available{
         margin-top: 10px;
         margin-bottom: 30px;
@@ -80,29 +96,48 @@
     }
     .ma-floating-container{
         margin: 0 50px;
+        @include respond-to("x-small") {
+            margin: 0px;
+        }
+        @include respond-to("medium") {
+            margin: 0 50px;
+        }
         .middle-col{
             padding: 30px;
         }
         .left-col{
-            padding: 30px 50px;
+            
             border-right: 1px solid #CACACA;
+            @include respond-to("x-small") {
+                padding: 0px 15px;
+            }
+            @include respond-to("medium") {
+                padding: 30px 50px;
+            }
             h2{
                 margin-bottom: 20px;
             }
         }
         .right-col{
-            padding: 30px 50px;
+            @include respond-to("x-small") {
+                padding: 0px 15px;
+            }
+            @include respond-to("medium") {
+                padding: 30px 50px;
+            }
             h2{
                 margin-bottom: 20px;
             }
         }
     }
     .ma-section-tabs{
-        margin: 0 15px;
         margin-bottom: 50px;
-        // .described-card-wrapper{
-        //     max-width:350px;
-        // }
+        @include respond-to("x-small") {
+            margin: 0px;
+        }
+        @include respond-to("medium") {
+            margin: 0 15px;
+        }
     }
     .featured-favs{
         margin-top: 50px;

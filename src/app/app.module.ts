@@ -26,6 +26,8 @@ import { MaProductDetailsComponent } from './ma-product-details/ma-product-detai
 import { MaProductSelectComponent } from './ma-product-select/ma-product-select.component';
 import { MaImageCardVerticleComponent } from './ma-image-card-verticle/ma-image-card-verticle.component';
 import { MaProductPageComponent } from './ma-product-page/ma-product-page.component';
+import { MaMenuComponent } from './ma-menu/ma-menu.component';
+import { MaCarouselSecondaryComponent } from './ma-carousel-secondary/ma-carousel-secondary.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +53,9 @@ import { MaProductPageComponent } from './ma-product-page/ma-product-page.compon
     MaProductDetailsComponent,
     MaProductSelectComponent,
     MaImageCardVerticleComponent,
-    MaProductPageComponent
+    MaProductPageComponent,
+    MaMenuComponent,
+    MaCarouselSecondaryComponent
   ],
   imports: [
     BrowserModule,

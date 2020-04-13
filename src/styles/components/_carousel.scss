@@ -67,71 +67,45 @@
         }
     }
 }
-.carousel-menu{
-    display: flex;
-    align-items: center;
-    background-color: #000;
-    color: #fff;
-    position: absolute;
-    right: 0;
-    top: 0px;
-    left: 0;
-    z-index: 15;
-    min-height: 60px;
+
+.ma-carousel-secondary{
     @include respond-to("x-small") {
-        margin-right: 0%;
-        margin-left: 0%;
-        flex-wrap: wrap;
+        margin-bottom: 30px;
     }
     @include respond-to("medium") {
-        margin-right: 15%;
-        margin-left: 15%;
-        flex-wrap: unset;
+        margin-bottom: 0px;
     }
-    .menu-item{
-        min-height: 60px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0px 30px;
-        white-space: nowrap;
-        &:hover{
-            background-color: #E91E63;
-            cursor: pointer;
-            .item-body{
-                display: block;
-            }
+    .image-preview{
+        @include respond-to("x-small") {
+            margin-bottom: 20px;
         }
-    }
-    .right-col{
-        width: 100%;
-        padding-right: 30px;
-    }
-    .item-body{
-        display: none;
-        position: absolute;
-        top:60px;
-        left: 0px;
-        min-height: 440px;
-        background-color: #E91E63;
-        color: #fff;
-        width: 100%;
-        >.row{
-            min-height: 440px;;
-        }
-        .section-title{
-            margin-bottom: 10px;
-            font-size: 16px;
-        }
-        .bottom-row{
-            margin-top: 44px;
-        }
-        .__link{
-            font-size: 12px;
+        @include respond-to("medium") {
+            margin-bottom: 50px;
         }
         img{
             width: 100%;
-            height: 100%;
+        }
+    }
+    .icon-previous, .icon-next{
+        color: #837C7C;
+        font-size: 24px;
+    }
+    .carousel-thumbnail{
+        margin: 0 15px;
+        display: flex;
+        img{
+            @include respond-to("x-small") {
+                width: 30px;
+            }
+            @include respond-to("medium") {
+                width: 100px;
+            }
+        }
+        &:hover{
+            cursor: pointer;
+        }
+        &.thumbnail--active{
+            border: 3px solid #E91E63;
         }
     }
 }

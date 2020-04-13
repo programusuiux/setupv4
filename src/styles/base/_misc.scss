@@ -94,10 +94,14 @@
     // }
   }
     .container{
-    padding: 0px;
-    // @include respond-to("x-large") {
-    //   max-width: 1900px !important;
-    // }
+      // @include respond-to("x-small") {
+      //     padding: 0 15px;
+      // }
+      // @include respond-to("medium") {
+      //     margin-right: 15%;
+      //     margin-left: 15%;
+      //     flex-wrap: unset;
+      // }
   }
 .__link{
   &:hover{

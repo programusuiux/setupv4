@@ -23,12 +23,14 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        //background-color: #b4b4b4;
         padding: 10px;
-        min-width: 300px;
         min-height: 200px;
-        //background: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.50) ), url('https://previews.123rf.com/images/stockbroker/stockbroker1411/stockbroker141100098/33469667-group-of-young-friends-shopping-outdoors-together.jpg');
-        
+        @include respond-to("x-small") {
+            min-width: 250px;
+        }
+        @include respond-to("medium") {
+            min-width: 300px;
+        }
         position: relative;
         .heart-icon{
             color: #E91E63;

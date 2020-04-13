@@ -29,7 +29,10 @@
         }
         button{
             background-color: #6A6A6A;
-            height: 50px;
+            height: auto;
+            min-height: 50px;
+            white-space: normal;
+            line-height: 16px;
             color: #fff;
         }
         h3{

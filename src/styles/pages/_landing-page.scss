@@ -6,6 +6,22 @@
     .ma-inner-header{
         margin-bottom: 50px;
     }
+    .ma-menu{
+        position: absolute;
+        right: 0;
+        top: 0px;
+        left: 0;
+        @include respond-to("x-small") {
+            margin-right: 0%;
+            margin-left: 0%;
+            flex-wrap: wrap;
+        }
+        @include respond-to("medium") {
+            margin-right: 15%;
+            margin-left: 15%;
+            flex-wrap: unset;
+        }
+    }
     .carousel-container{
         margin-bottom: 50px;
         .carousel-item{
@@ -88,13 +104,13 @@
         }
         .ma-image-card--primary{
             margin:5px;
-            max-width: 262px;
+            max-width: 255px;
             min-width: unset;
             @include respond-to("x-small") {
                 max-width: unset;
             }
             @include respond-to("medium") {
-                max-width: 262px;
+                max-width: 255px;
             }
         }
     }
@@ -117,7 +133,7 @@
         }
         .ma-image-card--primary{
             margin:5px;
-            max-width: 262px;
+            max-width: 255px;
             min-width: unset;
         }
     }
