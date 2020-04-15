@@ -23,6 +23,7 @@ import {MaProductDetailsComponent} from './ma-product-details/ma-product-details
 import {MaImageCardVerticleComponent} from './ma-image-card-verticle/ma-image-card-verticle.component';
 import {MaMenuComponent} from './ma-menu/ma-menu.component';
 import {MaCarouselSecondaryComponent} from './ma-carousel-secondary/ma-carousel-secondary.component';
+import {MaSignInPageComponent} from './ma-sign-in-page/ma-sign-in-page.component';
 
 
 const routes: Routes = [
@@ -49,6 +50,7 @@ const routes: Routes = [
   { path: 'image-card-verticle', component: MaImageCardVerticleComponent },
   { path: 'menu', component: MaMenuComponent },
   { path: 'carousel-secondary', component: MaCarouselSecondaryComponent },
+  { path: 'sign-in-page', component: MaSignInPageComponent },
 
 ];
 

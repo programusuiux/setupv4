@@ -1,0 +1,86 @@
+.ma-sign-in-page{
+    background: url('/assets/images/signinupbg.png') no-repeat;
+    background-size: cover;
+    @include respond-to("x-small") {
+        padding: 10px 25px;
+    }
+    @include respond-to("medium") {
+        padding: 50px 65px;
+    }
+    .sign-in-body{
+        .left-col{
+            background: url('/assets/images/signinbg.png') no-repeat;
+            @include respond-to("x-small") {
+                min-height: 300px;
+            }
+            @include respond-to("medium") {
+                min-height: 500px;
+            }
+            background-size: cover;
+            .description-text{
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-top: 100px;
+                h1{
+                    white-space: normal;
+                }
+            }
+        }
+        .right-col{
+            background-color: #fff;
+            .logo{
+                background-color: #E91E63;
+                max-width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 5px solid #FCDDE8; 
+                margin: 50px 0px;
+                img{
+                    width: 100px;
+                }   
+            }
+            .credentials-container{
+                @include respond-to("x-small") {
+                    padding: 0;
+                }
+                @include respond-to("medium") {
+                    padding: 0 100px;
+                }
+                .mat-form-field{
+                    width: 100%;
+                    margin: 15px 0px;
+                }
+            }
+            .sign-in-btn-wrapper{
+                margin: 50px 0px;
+            }
+            .ma-btn--large{
+                width: 100%;
+                padding: 15px 30px !important;
+            }
+            .social-media-buttons{
+                margin: 30px 0px;
+                button{
+                    margin:0 10px;
+                    color: #fff;
+                }
+                .btn-fb{
+                    background-color: #3B5998;
+                }
+                .btn-twitter{
+                    background-color: #00ACEE;
+                }
+                .btn-gplus{
+                    background-color: #DE5246;
+                }
+            }
+        }
+    }
+    .sign-in-footer{
+        margin-top: 50px;
+    }
+}
