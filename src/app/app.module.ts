@@ -29,6 +29,7 @@ import { MaProductPageComponent } from './ma-product-page/ma-product-page.compon
 import { MaMenuComponent } from './ma-menu/ma-menu.component';
 import { MaCarouselSecondaryComponent } from './ma-carousel-secondary/ma-carousel-secondary.component';
 import { MaSignInPageComponent } from './ma-sign-in-page/ma-sign-in-page.component';
+import { MaSignUpPageComponent } from './ma-sign-up-page/ma-sign-up-page.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,8 @@ import { MaSignInPageComponent } from './ma-sign-in-page/ma-sign-in-page.compone
     MaProductPageComponent,
     MaMenuComponent,
     MaCarouselSecondaryComponent,
-    MaSignInPageComponent
+    MaSignInPageComponent,
+    MaSignUpPageComponent
   ],
   imports: [
     BrowserModule,

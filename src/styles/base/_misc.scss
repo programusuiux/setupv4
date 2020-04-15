@@ -130,5 +130,7 @@
   margin: 0 10px;
 }
 .mat-checkbox-checked{
-  background-color: #e91e63;;
+  .mat-checkbox-background{
+    background-color: #e91e63 !important;
+  }
 }
