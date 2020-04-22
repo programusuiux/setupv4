@@ -110,7 +110,7 @@
             min-height: 150px;
             &:hover{
                   i {
-                    color: #E91E63;  
+                    color: $ma_color_primary;  
                     &:after {
                     transition: all 0.8s ease-out;
                       right: 100%;

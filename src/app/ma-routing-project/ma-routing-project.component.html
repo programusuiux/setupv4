@@ -1,7 +1,7 @@
 <mat-drawer-container class="library-drawer">
     <mat-drawer #drawer class="" mode="side">
         <mat-list role="list" class="main-link">
-            <mat-list-item>
+            <mat-list-item class="library-logo-container">
                 <img src="../../assets/images/companylogo.png">
             </mat-list-item>
             <mat-list-item role="listitem"><a routerLink="/style-guide" mat-button color="primary">Style Guide</a></mat-list-item>
@@ -16,6 +16,7 @@
             <mat-list-item role="listitem"><a routerLink="/image-card-detailed" mat-button color="primary">Image Card Detailed</a></mat-list-item>
             <mat-list-item role="listitem"><a routerLink="/image-card-described" mat-button color="primary">Image Card Described</a></mat-list-item>
             <mat-list-item role="listitem"><a routerLink="/image-card-verticle" mat-button color="primary">Image Card Verticle</a></mat-list-item>
+            <mat-list-item role="listitem"><a routerLink="/search-item-card" mat-button color="primary">Search Item Card</a></mat-list-item>
             <mat-list-item role="listitem"><a routerLink="/download-component" mat-button color="primary">App Download</a></mat-list-item>
             <mat-list-item role="listitem"><a routerLink="/footer" mat-button color="primary">Footer</a></mat-list-item>
             <mat-list-item role="listitem"><a routerLink="/carousel" mat-button color="primary">Carousel</a></mat-list-item>
@@ -25,27 +26,28 @@
             <mat-list-item role="listitem"><a routerLink="/section-tabs" mat-button color="primary">Section Tabs</a></mat-list-item>
             <mat-list-item role="listitem"><a routerLink="/product-details" mat-button color="primary">Product Details</a></mat-list-item>
             <mat-list-item role="listitem"><a routerLink="/product-select" mat-button color="primary">Product Select</a></mat-list-item>
+            <mat-list-item role="listitem"><a routerLink="/search-result-filter" mat-button color="primary">Search Result Filter</a></mat-list-item>
             <mat-list-item role="listitem"><a routerLink="/landing-page" mat-button color="primary">Landing Page</a></mat-list-item>
             <mat-list-item role="listitem"><a routerLink="/vendor-page" mat-button color="primary">Vendor Page</a></mat-list-item>
             <mat-list-item role="listitem"><a routerLink="/product-page" mat-button color="primary">Product Page</a></mat-list-item>
             <mat-list-item role="listitem"><a routerLink="/sign-in-page" mat-button color="primary">Sign In Page</a></mat-list-item>
             <mat-list-item role="listitem"><a routerLink="/sign-up-page" mat-button color="primary">Sign Up Page</a></mat-list-item>
+            <mat-list-item role="listitem"><a routerLink="/search-result-page" mat-button color="primary">Search Result Page</a></mat-list-item>
         </mat-list>
     </mat-drawer>
     <div class="example-sidenav-content">
-        <div class="wrapper-tmp">
-          <button mat-mini-fab type="button" mat-button (click)="drawer.toggle()">
-            <i class="material-icons">menu</i>
-          </button>
-    
+        <div class="wrapper-tmp">    
           <div class="container-tmp">
             <header class="template-header header">
+              <button mat-mini-fab type="button" mat-button (click)="drawer.toggle()">
+                <i class="material-icons">menu</i>
+              </button>
               <div class="grid-inner">
                 <div class="title">
-                  <h1>Multi App Web</h1>
+                  <h1 class="ma__heading-1">Multi App Web</h1>
                 </div>
-                <div>Component Library / DESIGN GUIDELINES</div>
-                <p>
+                <h2 class="ma__heading-2">Component Library / Design Guideline</h2>
+                <p class="">
                   Welcome to the Component Library/Design Guideline for Multi App Web
                 </p>
               </div>

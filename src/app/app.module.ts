@@ -30,6 +30,9 @@ import { MaMenuComponent } from './ma-menu/ma-menu.component';
 import { MaCarouselSecondaryComponent } from './ma-carousel-secondary/ma-carousel-secondary.component';
 import { MaSignInPageComponent } from './ma-sign-in-page/ma-sign-in-page.component';
 import { MaSignUpPageComponent } from './ma-sign-up-page/ma-sign-up-page.component';
+import { MaSearchItemCardComponent } from './ma-search-item-card/ma-search-item-card.component';
+import { MaSearchResultFilterComponent } from './ma-search-result-filter/ma-search-result-filter.component';
+import { MaSearchResultPageComponent } from './ma-search-result-page/ma-search-result-page.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +62,10 @@ import { MaSignUpPageComponent } from './ma-sign-up-page/ma-sign-up-page.compone
     MaMenuComponent,
     MaCarouselSecondaryComponent,
     MaSignInPageComponent,
-    MaSignUpPageComponent
+    MaSignUpPageComponent,
+    MaSearchItemCardComponent,
+    MaSearchResultFilterComponent,
+    MaSearchResultPageComponent
   ],
   imports: [
     BrowserModule,

@@ -25,6 +25,9 @@ import {MaMenuComponent} from './ma-menu/ma-menu.component';
 import {MaCarouselSecondaryComponent} from './ma-carousel-secondary/ma-carousel-secondary.component';
 import {MaSignInPageComponent} from './ma-sign-in-page/ma-sign-in-page.component';
 import {MaSignUpPageComponent} from './ma-sign-up-page/ma-sign-up-page.component';
+import {MaSearchItemCardComponent} from './ma-search-item-card/ma-search-item-card.component';
+import {MaSearchResultFilterComponent} from './ma-search-result-filter/ma-search-result-filter.component';
+import {MaSearchResultPageComponent} from './ma-search-result-page/ma-search-result-page.component';
 
 
 const routes: Routes = [
@@ -53,6 +56,9 @@ const routes: Routes = [
   { path: 'carousel-secondary', component: MaCarouselSecondaryComponent },
   { path: 'sign-in-page', component: MaSignInPageComponent },
   { path: 'sign-up-page', component: MaSignUpPageComponent },
+  { path: 'search-item-card', component: MaSearchItemCardComponent },
+  { path: 'search-result-filter', component: MaSearchResultFilterComponent },
+  { path: 'search-result-page', component: MaSearchResultPageComponent },
 
 ];
 

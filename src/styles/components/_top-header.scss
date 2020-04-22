@@ -1,11 +1,52 @@
 .ma-top-header{
     background-color: #F8F8F8;
-    padding: 10px 25px;
     width: 100%;
+    @include respond-to("x-small") {
+        padding: 10px;
+    }
+    @include respond-to("medium") {
+        padding: 10px 25px;
+    } 
+    .service-option-container{
+        
+        @include respond-to("x-small") {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        @include respond-to("medium") {
+            flex-direction: row;
+            align-items: center;
+        } 
+    }
+    .navbar-collapse{
+        @include respond-to("x-small") {
+            margin-bottom: 10px;
+        }
+        @include respond-to("medium") {
+            margin-bottom: 0px;
+        } 
+    }
     .top-header-label{
         padding-right: 20px;
-        border-right: 1px dotted #000;
-        margin-right: 20px;
+        @include respond-to("x-small") {
+            border:0px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        @include respond-to("medium") {
+            border-right: 1px dotted #000;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin-right: 20px;
+        } 
+    }
+    .account-settings{
+        @include respond-to("x-small") {
+            width: 100%;
+        }
+        @include respond-to("medium") {
+            width: 30%;
+        } 
     }
     .profile-avatar{
         height: 30px;

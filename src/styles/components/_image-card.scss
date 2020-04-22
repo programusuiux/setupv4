@@ -33,10 +33,10 @@
         }
         position: relative;
         .heart-icon{
-            color: #E91E63;
+            color: $ma_color_primary;
         }
         .star-icon{
-            color:#E91E63;
+            color:$ma_color_primary;
         }
         .card-details-section{
             color: #fff;
@@ -51,10 +51,10 @@
         min-height: 200px;
         position: relative;
         .heart-icon{
-            color: #E91E63;
+            color: $ma_color_primary;
         }
         .star-icon{
-            color:#E91E63;
+            color:$ma_color_primary;
         }
     }
     &--secondary{
@@ -143,7 +143,7 @@
         font-size: 16px;
     }
     .star-icon{
-        color:#E91E63;
+        color:$ma_color_primary;
         padding-right: 2px;
     }
     .left-col{
@@ -159,4 +159,70 @@
 .verticle-card-wrapper{
     display: flex;
     height: 100%;
+}
+
+.ma-search-item-card{
+    background-color: #fff;
+    padding: 15px;
+    position: relative;
+    .img-wrapper{
+        @include respond-to("x-small") {
+            flex-grow: 1;
+        }
+        @include respond-to("small") {
+            flex-grow: inherit;
+        }
+        @include respond-to("medium") {
+            flex-grow: inherit;
+        }
+    }
+    img{
+        @include respond-to("x-small") {
+            max-width: unset;
+            margin-right: 0px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        @include respond-to("medium") {
+            max-width: 200px;
+            margin-right: 20px;
+            margin-bottom: 0px;
+        }
+    }
+    .desc-container{
+        >.ma_flex__item:nth-child(1){
+            @include respond-to("x-small") {
+                margin-bottom: 10px;
+            }
+            @include respond-to("small") {
+                margin-bottom: 0px;
+            }    
+        }
+        @include respond-to("x-small") {
+            flex-direction: column;
+        }
+        @include respond-to("small") {
+            flex-direction: row;
+        }
+    }
+    .star-icon{
+        margin-right: 5px;
+    }
+    .item-name{
+        margin-bottom: 10px;
+    }
+    .item-badge{
+        background-color: $ma_color_primary;
+        width: 60px;
+        height: 60px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-radius: 50%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
 }

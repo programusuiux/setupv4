@@ -94,13 +94,8 @@
     // }
   }
     .container{
-      // @include respond-to("x-small") {
-      //     padding: 0 15px;
-      // }
-      // @include respond-to("medium") {
-      //     margin-right: 15%;
-      //     margin-left: 15%;
-      //     flex-wrap: unset;
+      // @include respond-to("large") {
+      //     min-width: 1400px;
       // }
   }
 .__link{
@@ -132,5 +127,14 @@
 .mat-checkbox-checked{
   .mat-checkbox-background{
     background-color: #e91e63 !important;
+  }
+}
+.library-logo-container{
+  height: 100px !important;
+  justify-content: center;
+  display: flex !important;
+  background-color: #144a52;
+  img{
+    width: 100px;
   }
 }

@@ -7,7 +7,7 @@
     // right: 0;
     // top: 0px;
     // left: 0;
-    z-index: 15;
+    z-index: 20;
     min-height: 60px;
     @include respond-to("x-small") {
         margin-right: 0%;
@@ -27,7 +27,7 @@
         padding: 0px 30px;
         white-space: nowrap;
         &:hover{
-            background-color: #E91E63;
+            background-color: $ma_color_primary;
             cursor: pointer;
             .item-body{
                 display: block;
@@ -36,18 +36,33 @@
     }
     .right-col{
         width: 100%;
-        padding-right: 30px;
+        display: flex;
+        justify-content: flex-end;
+        @include respond-to("x-small") {
+            padding: 5px;
+        }
+        @include respond-to("medium") {
+            padding: 0px;
+            padding-right: 20px;
+        } 
     }
     .item-body{
         display: none;
         position: absolute;
         top:60px;
-        z-index: 15;
+        z-index: 20;
         left: 0px;
         min-height: 440px;
-        background-color: #E91E63;
+        background-color: $ma_color_primary;
         color: #fff;
         width: 100%;
+        justify-content: flex-end;
+        @include respond-to("x-small") {
+            padding: 30px;
+        }
+        @include respond-to("medium") {
+            padding: 0px;
+        } 
         >.row{
             min-height: 440px;;
         }
@@ -64,6 +79,12 @@
         img{
             width: 100%;
             height: 100%;
+            @include respond-to("x-small") {
+                display: none;
+            }
+            @include respond-to("medium") {
+                display: block;
+            } 
         }
     }
 }

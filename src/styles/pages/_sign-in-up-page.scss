@@ -30,7 +30,7 @@
         .right-col{
             background-color: #fff;
             .logo{
-                background-color: #E91E63;
+                background-color: $ma_color_primary;
                 max-width: 150px;
                 height: 150px;
                 border-radius: 50%;
@@ -104,7 +104,7 @@
     }
     .sign-up-header{
         background-color: #fff;
-        border-bottom: 5px solid #E91E63;
+        border-bottom: 5px solid $ma_color_primary;
         flex-wrap: wrap;
         @include respond-to("x-small") {
             padding: 10px;

@@ -10,6 +10,7 @@
 @import "base/typography";
 @import "base/utilities";
 @import "base/colors";
+@import "base/library";
 
 @import "components/badges";
 @import "components/buttons";
@@ -26,8 +27,10 @@
 @import "components/section-tabs";
 @import "components/product";
 @import "components/menu";
+@import "components/search";
 
 @import "pages/landing-page";
 @import "pages/vendor-page";
 @import "pages/product-page";
 @import "pages/sign-in-up-page";
+@import "pages/search-result-page";
