@@ -2,6 +2,7 @@
     .section-title{
         @include respond-to("x-small") {
             display: block;
+            padding-left: 10px;
          }
          @include respond-to("medium") {
              display: none;

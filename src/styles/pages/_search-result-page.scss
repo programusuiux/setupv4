@@ -60,9 +60,29 @@
         }   
         .sr-breadcrumb{
             margin: 10px 0px;
+            @include respond-to("x-small") {
+                padding-left: 10px;
+            }
+            @include respond-to("medium") {
+                padding-left: 0px;
+            } 
         }
         .sr-availability{
             margin: 20px 0px;
+            @include respond-to("x-small") {
+                padding-left: 10px;
+            }
+            @include respond-to("medium") {
+                padding-left: 0px;
+            } 
+        }
+        .sorted-by-label{
+            @include respond-to("x-small") {
+                margin: 10px 0px;
+            }
+            @include respond-to("medium") {
+                margin: 10px 0px;
+            } 
         }
         .sr-toggle{
             margin: 20px 0px;
