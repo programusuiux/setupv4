@@ -60,6 +60,9 @@ const routes: Routes = [
   { path: 'search-result-filter', component: MaSearchResultFilterComponent },
   { path: 'search-result-page', component: MaSearchResultPageComponent },
 
+  { path: '', redirectTo: '/sign-in-page', pathMatch: 'full' },
+  { path: '**', redirectTo: '/sign-in-page', pathMatch: 'full' }
+
 ];
 
 @NgModule({
