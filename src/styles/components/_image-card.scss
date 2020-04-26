@@ -137,7 +137,7 @@
     }
 }
 .described-card-details{
-    padding: 15px;
+    padding: 5px;
     padding-top: 5px;
     i{
         font-size: 16px;
@@ -151,6 +151,14 @@
     }
     .right-col{
         min-height: 80px;
+    }
+}
+.described-card-button{
+    padding:5px;
+    button{
+        background-color: $ma_color_primary;
+        color: #fff;
+        width: 100%;
     }
 }
 .secondary-card-details{

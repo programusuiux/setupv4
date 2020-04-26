@@ -13,11 +13,13 @@
         margin-right: 0%;
         margin-left: 0%;
         flex-wrap: wrap;
+        display: none;
     }
     @include respond-to("medium") {
         margin-right: 0%;
         margin-left: 0%;
         flex-wrap: unset;
+        display: block;
     }
     .menu-item{
         min-height: 60px;

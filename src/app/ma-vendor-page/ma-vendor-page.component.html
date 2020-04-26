@@ -1,15 +1,25 @@
 <div class="ma-vendor-page">
-    <div class="container-fluid">
-        <app-ma-top-header></app-ma-top-header>
-    </div>
-    <div class="container">
+    <div class="container inner-header-container">
         <app-ma-inner-header></app-ma-inner-header>
     </div>
     <div class="container-fluid carousel-container">
         <app-ma-carousel></app-ma-carousel>
     </div>
-    <div class="container">
-         <app-ma-vendor-services></app-ma-vendor-services>
+    <div class="container vendor-options">
+        <div class="ma_flex--container flex-wrap">
+            <div class="ma_flex__item ma-col-1">
+                <button mat-stroked-button class="">Click & Collect</button>
+            </div>
+            <div class="ma_flex__item ma-col-2">
+                <button mat-stroked-button class="">Express Collect</button>
+            </div>
+            <div class="ma_flex__item ma-col-3">
+                <button mat-stroked-button class="">Deliver Now</button>
+            </div>
+            <div class="ma_flex__item ma-col-4">
+                <button mat-stroked-button class="">Schedule</button>
+            </div>
+        </div>
     </div>
     <div class="container ad-card-section">
         <div class="ma_flex--container">
@@ -62,8 +72,54 @@
         <app-ma-image-card-full></app-ma-image-card-full>
         <app-ma-floating-container></app-ma-floating-container>
     </div>
-    <div class="container-fluid">
-        <app-ma-section-tabs></app-ma-section-tabs>
+    <div id="productlist" class="container-fluid product-list-container">
+        <div class="ma_flex--container section-header">
+            <div class="ma_flex__item">
+                <h2 class="ma__heading-2">Product List</h2>
+            </div>
+        </div>
+        <div class="ma_flex--container flex-column cat-wrapper">
+            <div class="ma_flex__item cat-header">
+                <h3 class="ma__heading-3 ma-txt__secondary">Pizza</h3>
+            </div>
+            <div class="ma_flex__item">
+                <div class="ma_flex--container flex-wrap">
+                    <div class="ma_flex__item cat-item">
+                        <app-ma-image-card-described></app-ma-image-card-described>
+                    </div>
+                    <div class="ma_flex__item cat-item">
+                        <app-ma-image-card-described></app-ma-image-card-described>
+                    </div>
+                    <div class="ma_flex__item cat-item">
+                        <app-ma-image-card-described></app-ma-image-card-described>
+                    </div>
+                    <div class="ma_flex__item cat-item">
+                        <app-ma-image-card-described></app-ma-image-card-described>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ma_flex--container flex-column cat-wrapper">
+            <div class="ma_flex__item cat-header">
+                <h3 class="ma__heading-3 ma-txt__secondary">Burger</h3>
+            </div>
+            <div class="ma_flex__item">
+                <div class="ma_flex--container flex-wrap">
+                    <div class="ma_flex__item cat-item">
+                        <app-ma-image-card-described></app-ma-image-card-described>
+                    </div>
+                    <div class="ma_flex__item cat-item">
+                        <app-ma-image-card-described></app-ma-image-card-described>
+                    </div>
+                    <div class="ma_flex__item cat-item">
+                        <app-ma-image-card-described></app-ma-image-card-described>
+                    </div>
+                    <div class="ma_flex__item cat-item">
+                        <app-ma-image-card-described></app-ma-image-card-described>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="container-fluid">
         <app-ma-footer></app-ma-footer>

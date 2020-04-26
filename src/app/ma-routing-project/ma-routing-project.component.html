@@ -51,6 +51,13 @@
                   Welcome to the Component Library/Design Guideline for Multi App Web
                 </p>
               </div>
+              <button mat-mini-fab type="button" [matMenuTriggerFor]="theme">
+                <i class="material-icons">brush</i>
+              </button>
+              <mat-menu #theme="matMenu">
+                <button mat-menu-item>Light Theme</button>
+                <button mat-menu-item>Dark Theme</button>
+              </mat-menu>
             </header>
     
             <div class="component-viewport">

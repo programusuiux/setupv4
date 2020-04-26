@@ -14,5 +14,14 @@
 </head>
 <body class="mat-typography">
   <app-root></app-root>
+  <script type="text/javascript">
+    $(function() {  
+      // Fixed nav
+      $(window).on('scroll', function() {
+        var wScroll = $(this).scrollTop();
+        wScroll > 420 ? $('#mamenu').addClass('fixed-menu') : $('#mamenu').removeClass('fixed-menu');
+	    });
+    });  
+</script>
 </body>
 </html>

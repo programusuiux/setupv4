@@ -1,5 +1,12 @@
 .ma-vendor-page{
     background-color: #fff;
+    .fixed-menu{
+        margin-right: 0% !important;
+        margin-left: 0% !important;
+        position: fixed !important;
+        top: 0 !important;
+        transition: 0.3s;
+    }
     .featured-favs{
         margin-bottom: 50px;
     }
@@ -8,6 +15,7 @@
         right: 0;
         top: 0px;
         left: 0;
+        transition: 0.3s;
         @include respond-to("x-small") {
             margin-right: 0%;
             margin-left: 0%;
@@ -49,6 +57,9 @@
     .ma-top-header{
         margin-bottom: 30px;
     }
+    .inner-header-container{
+        padding-top: 30px;
+    }
     .ma-inner-header{
         margin-bottom: 50px;
     }
@@ -89,8 +100,26 @@
             }
             .right-col{
                 display: flex;
-                align-items: center;
+                flex-direction: column;
                 justify-content: center;
+                color: #fff;
+                @include respond-to("x-small") {
+                    margin-top: 20px;
+                }
+                @include respond-to("medium") {
+                    margin-top: 0px;
+                }
+                h1{
+                    margin-bottom: 20px;
+                }
+                >div{
+                    @include respond-to("x-small") {
+                        width: 100%;
+                    }
+                    @include respond-to("medium") {
+                        width: 50%;
+                    }
+                }
             }
         }
     }
@@ -130,13 +159,66 @@
             }
         }
     }
-    .ma-section-tabs{
+    // .ma-section-tabs{
+    //     margin-bottom: 50px;
+    //     @include respond-to("x-small") {
+    //         margin: 0px;
+    //     }
+    //     @include respond-to("medium") {
+    //         margin: 0 15px;
+    //     }
+    // }
+    .product-list-container{
         margin-bottom: 50px;
-        @include respond-to("x-small") {
-            margin: 0px;
+        margin-top: -50px;
+        max-width: 1300px;
+        .cat-wrapper{
+            margin-bottom: 30px;
         }
-        @include respond-to("medium") {
-            margin: 0 15px;
+        .section-header{
+            @include respond-to("x-small") {
+                margin-left: 5px;
+            }
+            @include respond-to("medium") {
+                margin-left: 0px;
+            }
+        }
+        .cat-header{
+            margin-bottom: 10px;
+            @include respond-to("x-small") {
+                margin-left: 5px;
+            }
+            @include respond-to("medium") {
+                margin-left: 0px;
+            }
+        }
+        .cat-item{
+            @include respond-to("x-small") {
+                margin-bottom: 20px;
+            }
+            @include respond-to("medium") {
+                margin-bottom:0px;
+            }
+            &:nth-child(1){
+                .card-outer-wrapper{
+                    @include respond-to("x-small") {
+                        margin-left: 5px;
+                    }
+                    @include respond-to("medium") {
+                        margin-left: 0px;
+                    }
+                }
+            }
+            &:nth-last-child(1){
+                .card-outer-wrapper{
+                    @include respond-to("x-small") {
+                        margin-left: 5px;
+                    }
+                    @include respond-to("medium") {
+                        margin-left: 0px;
+                    }
+                }
+            }
         }
     }
     .featured-favs{
@@ -145,6 +227,31 @@
     .ad-card-section{
         >.ma_flex--container{
             flex-wrap: wrap;
+        }
+    }
+    .vendor-options{
+        margin-bottom: 50px;
+        background-color: $ma-bg-color__tertiary;
+        padding: 20px 15px;
+        .ma-col-1, .ma-col-2, .ma-col-3, .ma-col-4{
+            padding: 0 5px;
+            @include respond-to("x-small") {
+                width: 100%;
+            }
+            @include respond-to("medium") {
+                width: unset;
+            }
+        }
+        button{
+            width: 100%;
+            min-height: 80px;
+            font-size: 20px;
+            transition: 0.3s;
+            background-color: #fff;
+            &:hover{
+                color: $ma_color_primary;
+                border-bottom:5px solid $ma_color_primary;
+            }
         }
     }
 }
