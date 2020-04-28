@@ -3,9 +3,14 @@
     .fixed-menu{
         margin-right: 0% !important;
         margin-left: 0% !important;
-        position: fixed !important;
         top: 0 !important;
         transition: 0.3s;
+        @include respond-to("x-small") {
+            position: relative !important;
+        }
+        @include respond-to("medium") {
+            position: fixed !important;
+        }
     }
     .featured-favs{
         margin-bottom: 50px;
@@ -13,18 +18,19 @@
     .ma-menu{
         position: absolute;
         right: 0;
-        top: 0px;
         left: 0;
         transition: 0.3s;
         @include respond-to("x-small") {
             margin-right: 0%;
             margin-left: 0%;
             flex-wrap: wrap;
+            top: 56px;
         }
         @include respond-to("medium") {
             margin-right: 15%;
             margin-left: 15%;
             flex-wrap: unset;
+            top: 0px;
         }
     }
     .all-available{
@@ -56,6 +62,17 @@
     }
     .ma-top-header{
         margin-bottom: 30px;
+        // @include respond-to("x-small") {
+        //     padding: 10px;
+        //     background-color: #f8f8f8 !important;
+        // }
+        // @include respond-to("medium") {
+        //     padding: 10px 25px;
+        //     position: absolute;
+        //     padding: 0;
+        //     top: 0;
+        //     background-color: unset !important;
+        // } 
     }
     .inner-header-container{
         padding-top: 30px;

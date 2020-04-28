@@ -28,6 +28,7 @@ import {MaSignUpPageComponent} from './ma-sign-up-page/ma-sign-up-page.component
 import {MaSearchItemCardComponent} from './ma-search-item-card/ma-search-item-card.component';
 import {MaSearchResultFilterComponent} from './ma-search-result-filter/ma-search-result-filter.component';
 import {MaSearchResultPageComponent} from './ma-search-result-page/ma-search-result-page.component';
+import {MaAllPopupsComponent} from './ma-all-popups/ma-all-popups.component';
 
 
 const routes: Routes = [
@@ -59,6 +60,7 @@ const routes: Routes = [
   { path: 'search-item-card', component: MaSearchItemCardComponent },
   { path: 'search-result-filter', component: MaSearchResultFilterComponent },
   { path: 'search-result-page', component: MaSearchResultPageComponent },
+  { path: 'all-popups', component: MaAllPopupsComponent },
 
   { path: '', redirectTo: '/sign-in-page', pathMatch: 'full' },
   { path: '**', redirectTo: '/sign-in-page', pathMatch: 'full' }

@@ -3,17 +3,7 @@
     width: 100%;
     position: relative;
     z-index: 999;
-    @include respond-to("x-small") {
-        padding: 10px;
-        background-color: #f8f8f8 !important;
-    }
-    @include respond-to("medium") {
-        padding: 10px 25px;
-        position: absolute;
-        padding: 0;
-        top: 0;
-        background-color: unset !important;
-    } 
+    justify-content: flex-end;
     >ul{
         @include respond-to("x-small") {
             margin-top: 60px;

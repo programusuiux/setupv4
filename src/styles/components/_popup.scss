@@ -1,0 +1,123 @@
+//All Popups Library
+.ma-all-popups{
+
+}
+
+//Select Reservation Popup
+.reserve-modal{
+    @include respond-to("x-small") {
+        max-width: unset !important;
+        width: 100vw !important;
+        overflow: scroll;
+    }
+    @include respond-to("medium") {
+        max-width: 80vw !important;
+        width: 70vw !important;
+        overflow: hidden;
+    }
+    .mat-dialog-container{
+        padding: 0 15px !important;
+    }
+}
+.ma-select-reservation-popup{
+    .close-btn{
+        cursor: pointer;
+        position: absolute;
+        top:5px;
+        right: 5px;
+        @include respond-to("x-small") {
+            display: block;
+        }
+        @include respond-to("medium") {
+            display: none;
+        }
+    }
+    .left-col{
+        padding: 30px;
+        .col-header{
+            margin-bottom: 20px;
+        }
+        .toggle-basic{
+            .mat-button-toggle{
+                border-radius: 25px;
+                padding: 0 5px;
+                &.mat-button-toggle-checked{
+                    background-color: unset !important;
+                    color: #4CAF50 !important;
+                    border:1px solid #4CAF50;                    
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+    .right-col{
+        padding: 30px;
+        background-color: #f8f8f8;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        .mat-divider--dashed{
+            margin: 50px 0px !important;
+        }
+        .reserve-btn{
+            background-color: #cddc39;
+            color: #fff;
+            font-size: 20px;
+            min-width: 200px;
+            min-height: 50px;
+        }
+        .summary-section{
+            h3{
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .toggle-cards, .toggle-basic{
+        border:0px;
+        overflow: visible;
+        flex-wrap: wrap;
+        .mat-button-toggle{
+            white-space: nowrap;
+            position: relative;
+            background-color: #fff;
+            margin-right: 10px;
+            border-radius:10px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            min-height: 80px;
+            justify-content: center;
+            color: #4CAF50;
+            border: 0px;
+            @include respond-to("x-small") {
+                margin-bottom: 5px;
+            }
+            @include respond-to("medium") {
+                margin-bottom: 0px;
+            }
+            button{
+                height: 100%;
+            }
+            &.mat-button-toggle-checked{
+                background-color: #4CAF50;
+                color: #fff;
+                border:0px;
+                box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+            }
+        }
+    }
+    .toggle-basic{
+        .mat-button-toggle{
+            background-color: unset !important;
+            min-height: 50px;
+            margin:10px;
+            color: #837C7C;
+            &.mat-button-toggle-checked{
+                background-color: #4CAF50 !important;
+                color: #fff !important;
+                border:0px;
+                box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+            }
+        }
+    }
+}

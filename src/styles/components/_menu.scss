@@ -90,3 +90,18 @@
         }
     }
 }
+.menu-nav-wrapper{
+    position: absolute;
+    right: 0;
+    top: 0px;
+    left: 0;
+    z-index: 9999;
+    &.bg-dark{
+        @include respond-to("x-small") {
+            background-color: #000 !important;
+        }
+        @include respond-to("medium") {
+            background-color: unset !important;
+        }
+    }
+}

@@ -5,6 +5,7 @@
         overflow: hidden;
         .mat-form-field{
             width: 90%;
+            padding-top: 6px;
             .mat-form-field-infix{
                 // position: relative;
                 // top: 4px;
@@ -17,6 +18,11 @@
         .cat-select-col{
             background-color: #F7F7F7;
             padding-left: 20px;
+        }
+        .search-col{
+            .mat-form-field{
+                padding-left: 10px;
+            }
         }
         .btn-search{
             height: 100%;
