@@ -35,6 +35,9 @@ import { MaSearchResultFilterComponent } from './ma-search-result-filter/ma-sear
 import { MaSearchResultPageComponent } from './ma-search-result-page/ma-search-result-page.component';
 import { MaSelectReservationPopupComponent } from './ma-select-reservation-popup/ma-select-reservation-popup.component';
 import { MaAllPopupsComponent } from './ma-all-popups/ma-all-popups.component';
+import { MaCartItemComponent } from './ma-cart-item/ma-cart-item.component';
+import { MaCartBlockComponent } from './ma-cart-block/ma-cart-block.component';
+import { MaCartPageComponent } from './ma-cart-page/ma-cart-page.component';
 
 @NgModule({
   declarations: [
@@ -69,7 +72,10 @@ import { MaAllPopupsComponent } from './ma-all-popups/ma-all-popups.component';
     MaSearchResultFilterComponent,
     MaSearchResultPageComponent,
     MaSelectReservationPopupComponent,
-    MaAllPopupsComponent
+    MaAllPopupsComponent,
+    MaCartItemComponent,
+    MaCartBlockComponent,
+    MaCartPageComponent
   ],
   imports: [
     BrowserModule,

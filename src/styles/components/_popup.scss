@@ -12,7 +12,7 @@
     }
     @include respond-to("medium") {
         max-width: 80vw !important;
-        width: 70vw !important;
+        width: 75vw !important;
         overflow: hidden;
     }
     .mat-dialog-container{
@@ -80,7 +80,7 @@
             white-space: nowrap;
             position: relative;
             background-color: #fff;
-            margin-right: 10px;
+            margin-right: 5px;
             border-radius:10px;
             overflow: hidden;
             display: flex;
@@ -93,7 +93,7 @@
                 margin-bottom: 5px;
             }
             @include respond-to("medium") {
-                margin-bottom: 0px;
+                margin-bottom: 5px;
             }
             button{
                 height: 100%;

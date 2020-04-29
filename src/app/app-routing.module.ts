@@ -29,6 +29,9 @@ import {MaSearchItemCardComponent} from './ma-search-item-card/ma-search-item-ca
 import {MaSearchResultFilterComponent} from './ma-search-result-filter/ma-search-result-filter.component';
 import {MaSearchResultPageComponent} from './ma-search-result-page/ma-search-result-page.component';
 import {MaAllPopupsComponent} from './ma-all-popups/ma-all-popups.component';
+import {MaCartItemComponent} from './ma-cart-item/ma-cart-item.component';
+import {MaCartBlockComponent} from './ma-cart-block/ma-cart-block.component';
+import {MaCartPageComponent} from './ma-cart-page/ma-cart-page.component';
 
 
 const routes: Routes = [
@@ -61,6 +64,9 @@ const routes: Routes = [
   { path: 'search-result-filter', component: MaSearchResultFilterComponent },
   { path: 'search-result-page', component: MaSearchResultPageComponent },
   { path: 'all-popups', component: MaAllPopupsComponent },
+  { path: 'cart-item', component: MaCartItemComponent },
+  { path: 'cart-block', component: MaCartBlockComponent },
+  { path: 'cart-page', component: MaCartPageComponent },
 
   { path: '', redirectTo: '/sign-in-page', pathMatch: 'full' },
   { path: '**', redirectTo: '/sign-in-page', pathMatch: 'full' }
