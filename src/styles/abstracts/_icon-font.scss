@@ -1,272 +1,309 @@
-
 @font-face {
-    font-family: 'icomoon';
-    src:  url('~/assets/fonts/icomoon/icomoon.eot');
+  font-family: 'icomoon';
+  src:  url('~/assets/fonts/icomoon/icomoon.eot');
     src:  url('~/assets/fonts/icomoon/icomoon.eot') format('embedded-opentype'),
       url('~/assets/fonts/icomoon/icomoon.ttf') format('truetype'),
       url('~/assets/fonts/icomoon/icomoon.woff') format('woff'),
       url('~/assets/fonts/icomoon/icomoon.svg') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-  }
-  
-  [class^="ma-ico-"], [class*=" ma-ico-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    // speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-  
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .ma-ico-add:before {
-    content: "\e900";
-  }
-  .ma-ico-address:before {
-    content: "\e901";
-  }
-  .ma-ico-barcode:before {
-    content: "\e902";
-  }
-  .ma-ico-bill:before {
-    content: "\e903";
-  }
-  .ma-ico-brain:before {
-    content: "\e904";
-  }
-  .ma-ico-calendar:before {
-    content: "\e905";
-  }
-  .ma-ico-calendar-1:before {
-    content: "\e906";
-  }
-  .ma-ico-calendar-3:before {
-    content: "\e907";
-  }
-  .ma-ico-change-2:before {
-    content: "\e908";
-  }
-  .ma-ico-change:before {
-    content: "\e909";
-  }
-  .ma-ico-clock:before {
-    content: "\e90a";
-  }
-  .ma-ico-close:before {
-    content: "\e90b";
-  }
-  .ma-ico-close-2:before {
-    content: "\e90c";
-  }
-  .ma-ico-countdown:before {
-    content: "\e90d";
-  }
-  .ma-ico-delivery:before {
-    content: "\e90e";
-  }
-  .ma-ico-director:before {
-    content: "\e90f";
-  }
-  .ma-ico-down-arrow:before {
-    content: "\e910";
-  }
-  .ma-ico-download:before {
-    content: "\e911";
-  }
-  .ma-ico-dress:before {
-    content: "\e912";
-  }
-  .ma-ico-event:before {
-    content: "\e913";
-  }
-  .ma-ico-facebook:before {
-    content: "\e914";
-  }
-  .ma-ico-filter:before {
-    content: "\e915";
-  }
-  .ma-ico-florist:before {
-    content: "\e916";
-  }
-  .ma-ico-fullscreen:before {
-    content: "\e917";
-  }
-  .ma-ico-gift:before {
-    content: "\e918";
-  }
-  .ma-ico-heart:before {
-    content: "\e919";
-  }
-  .ma-ico-home-run:before {
-    content: "\e91a";
-  }
-  .ma-ico-image:before {
-    content: "\e91b";
-  }
-  .ma-ico-instagram:before {
-    content: "\e91c";
-  }
-  .ma-ico-leadership:before {
-    content: "\e91d";
-  }
-  .ma-ico-list:before {
-    content: "\e91e";
-  }
-  .ma-ico-list-2:before {
-    content: "\e91f";
-  }
-  .ma-ico-list-3:before {
-    content: "\e920";
-  }
-  .ma-ico-lock:before {
-    content: "\e921";
-  }
-  .ma-ico-login:before {
-    content: "\e922";
-  }
-  .ma-ico-minus:before {
-    content: "\e923";
-  }
-  .ma-ico-money:before {
-    content: "\e924";
-  }
-  .ma-ico-more:before {
-    content: "\e925";
-  }
-  .ma-ico-next:before {
-    content: "\e926";
-  }
-  .ma-ico-notebook:before {
-    content: "\e927";
-  }
-  .ma-ico-notification:before {
-    content: "\e928";
-  }
-  .ma-ico-open:before {
-    content: "\e929";
-  }
-  .ma-ico-optician:before {
-    content: "\e92a";
-  }
-  .ma-ico-order:before {
-    content: "\e92b";
-  }
-  .ma-ico-order-2:before {
-    content: "\e92c";
-  }
-  .ma-ico-paperclip:before {
-    content: "\e92d";
-  }
-  .ma-ico-pay:before {
-    content: "\e92e";
-  }
-  .ma-ico-phone:before {
-    content: "\e92f";
-  }
-  .ma-ico-plan:before {
-    content: "\e930";
-  }
-  .ma-ico-play:before {
-    content: "\e931";
-  }
-  .ma-ico-play-button:before {
-    content: "\e932";
-  }
-  .ma-ico-plus:before {
-    content: "\e933";
-  }
-  .ma-ico-plus-2:before {
-    content: "\e934";
-  }
-  .ma-ico-plus-3:before {
-    content: "\e935";
-  }
-  .ma-ico-problem:before {
-    content: "\e936";
-  }
-  .ma-ico-product:before {
-    content: "\e937";
-  }
-  .ma-ico-product-2:before {
-    content: "\e938";
-  }
-  .ma-ico-qr:before {
-    content: "\e939";
-  }
-  .ma-ico-question:before {
-    content: "\e93a";
-  }
-  .ma-ico-question-2:before {
-    content: "\e93b";
-  }
-  .ma-ico-restaurant:before {
-    content: "\e93c";
-  }
-  .ma-ico-return:before {
-    content: "\e93d";
-  }
-  .ma-ico-right-chevron:before {
-    content: "\e93e";
-  }
-  .ma-ico-sandwich:before {
-    content: "\e93f";
-  }
-  .ma-ico-search:before {
-    content: "\e940";
-  }
-  .ma-ico-send:before {
-    content: "\e941";
-  }
-  .ma-ico-shopping-bag:before {
-    content: "\e942";
-  }
-  .ma-ico-signage:before {
-    content: "\e943";
-  }
-  .ma-ico-speedometer:before {
-    content: "\e944";
-  }
-  .ma-ico-star:before {
-    content: "\e945";
-  }
-  .ma-ico-supermarket:before {
-    content: "\e946";
-  }
-  .ma-ico-support:before {
-    content: "\e947";
-  }
-  .ma-ico-tick:before {
-    content: "\e948";
-  }
-  .ma-ico-timer:before {
-    content: "\e949";
-  }
-  .ma-ico-twitter:before {
-    content: "\e94a";
-  }
-  .ma-ico-upload-1:before {
-    content: "\e94b";
-  }
-  .ma-ico-user:before {
-    content: "\e94c";
-  }
-  .ma-ico-user-2:before {
-    content: "\e94d";
-  }
-  .ma-ico-user-3:before {
-    content: "\e94e";
-  }
-  .ma-ico-work:before {
-    content: "\e94f";
-  }
-  .ma-ico-youtube:before {
-    content: "\e950";
-  }
-  
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="ma-ico-"], [class*=" ma-ico-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  // speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ma-ico-master-card .path1:before {
+  content: "\e956";
+  color: rgb(35, 31, 32);
+}
+.ma-ico-master-card .path2:before {
+  content: "\e957";
+  margin-left: -1.21875em;
+  color: rgb(255, 95, 0);
+}
+.ma-ico-master-card .path3:before {
+  content: "\e958";
+  margin-left: -1.21875em;
+  color: rgb(235, 0, 27);
+}
+.ma-ico-master-card .path4:before {
+  content: "\e959";
+  margin-left: -1.21875em;
+  color: rgb(247, 158, 27);
+}
+.ma-ico-master-card .path5:before {
+  content: "\e95a";
+  margin-left: -1.21875em;
+  color: rgb(247, 158, 27);
+}
+.ma-ico-stopwatch:before {
+  content: "\e951";
+}
+.ma-ico-bag-1:before {
+  content: "\e952";
+}
+.ma-ico-discount:before {
+  content: "\e953";
+}
+.ma-ico-edit-tools:before {
+  content: "\e954";
+}
+.ma-ico-comment:before {
+  content: "\e955";
+}
+.ma-ico-add:before {
+  content: "\e900";
+}
+.ma-ico-address:before {
+  content: "\e901";
+}
+.ma-ico-barcode:before {
+  content: "\e902";
+}
+.ma-ico-bill:before {
+  content: "\e903";
+}
+.ma-ico-brain:before {
+  content: "\e904";
+}
+.ma-ico-calendar:before {
+  content: "\e905";
+}
+.ma-ico-calendar-1:before {
+  content: "\e906";
+}
+.ma-ico-calendar-3:before {
+  content: "\e907";
+}
+.ma-ico-change-2:before {
+  content: "\e908";
+}
+.ma-ico-change:before {
+  content: "\e909";
+}
+.ma-ico-clock:before {
+  content: "\e90a";
+}
+.ma-ico-close:before {
+  content: "\e90b";
+}
+.ma-ico-close-2:before {
+  content: "\e90c";
+}
+.ma-ico-countdown:before {
+  content: "\e90d";
+}
+.ma-ico-delivery:before {
+  content: "\e90e";
+}
+.ma-ico-director:before {
+  content: "\e90f";
+}
+.ma-ico-down-arrow:before {
+  content: "\e910";
+}
+.ma-ico-download:before {
+  content: "\e911";
+}
+.ma-ico-dress:before {
+  content: "\e912";
+}
+.ma-ico-event:before {
+  content: "\e913";
+}
+.ma-ico-facebook:before {
+  content: "\e914";
+}
+.ma-ico-filter:before {
+  content: "\e915";
+}
+.ma-ico-florist:before {
+  content: "\e916";
+}
+.ma-ico-fullscreen:before {
+  content: "\e917";
+}
+.ma-ico-gift:before {
+  content: "\e918";
+}
+.ma-ico-heart:before {
+  content: "\e919";
+}
+.ma-ico-home-run:before {
+  content: "\e91a";
+}
+.ma-ico-image:before {
+  content: "\e91b";
+}
+.ma-ico-instagram:before {
+  content: "\e91c";
+}
+.ma-ico-leadership:before {
+  content: "\e91d";
+}
+.ma-ico-list:before {
+  content: "\e91e";
+}
+.ma-ico-list-2:before {
+  content: "\e91f";
+}
+.ma-ico-list-3:before {
+  content: "\e920";
+}
+.ma-ico-lock:before {
+  content: "\e921";
+}
+.ma-ico-login:before {
+  content: "\e922";
+}
+.ma-ico-minus:before {
+  content: "\e923";
+}
+.ma-ico-money:before {
+  content: "\e924";
+}
+.ma-ico-more:before {
+  content: "\e925";
+}
+.ma-ico-next:before {
+  content: "\e926";
+}
+.ma-ico-notebook:before {
+  content: "\e927";
+}
+.ma-ico-notification:before {
+  content: "\e928";
+}
+.ma-ico-open:before {
+  content: "\e929";
+}
+.ma-ico-optician:before {
+  content: "\e92a";
+}
+.ma-ico-order:before {
+  content: "\e92b";
+}
+.ma-ico-order-2:before {
+  content: "\e92c";
+}
+.ma-ico-paperclip:before {
+  content: "\e92d";
+}
+.ma-ico-pay:before {
+  content: "\e92e";
+}
+.ma-ico-phone:before {
+  content: "\e92f";
+}
+.ma-ico-plan:before {
+  content: "\e930";
+}
+.ma-ico-play:before {
+  content: "\e931";
+}
+.ma-ico-play-button:before {
+  content: "\e932";
+}
+.ma-ico-plus:before {
+  content: "\e933";
+}
+.ma-ico-plus-2:before {
+  content: "\e934";
+}
+.ma-ico-plus-3:before {
+  content: "\e935";
+}
+.ma-ico-problem:before {
+  content: "\e936";
+}
+.ma-ico-product:before {
+  content: "\e937";
+}
+.ma-ico-product-2:before {
+  content: "\e938";
+}
+.ma-ico-qr:before {
+  content: "\e939";
+}
+.ma-ico-question:before {
+  content: "\e93a";
+}
+.ma-ico-question-2:before {
+  content: "\e93b";
+}
+.ma-ico-restaurant:before {
+  content: "\e93c";
+}
+.ma-ico-return:before {
+  content: "\e93d";
+}
+.ma-ico-right-chevron:before {
+  content: "\e93e";
+}
+.ma-ico-sandwich:before {
+  content: "\e93f";
+}
+.ma-ico-search:before {
+  content: "\e940";
+}
+.ma-ico-send:before {
+  content: "\e941";
+}
+.ma-ico-shopping-bag:before {
+  content: "\e942";
+}
+.ma-ico-signage:before {
+  content: "\e943";
+}
+.ma-ico-speedometer:before {
+  content: "\e944";
+}
+.ma-ico-star:before {
+  content: "\e945";
+}
+.ma-ico-supermarket:before {
+  content: "\e946";
+}
+.ma-ico-support:before {
+  content: "\e947";
+}
+.ma-ico-tick:before {
+  content: "\e948";
+}
+.ma-ico-timer:before {
+  content: "\e949";
+}
+.ma-ico-twitter:before {
+  content: "\e94a";
+}
+.ma-ico-upload-1:before {
+  content: "\e94b";
+}
+.ma-ico-user:before {
+  content: "\e94c";
+}
+.ma-ico-user-2:before {
+  content: "\e94d";
+}
+.ma-ico-user-3:before {
+  content: "\e94e";
+}
+.ma-ico-work:before {
+  content: "\e94f";
+}
+.ma-ico-youtube:before {
+  content: "\e950";
+}
