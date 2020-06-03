@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaStyleGuideComponent } from './ma-style-guide/ma-style-guide.component';
 import { SearchComponent } from './search/search.component';
 import { SetAdvancedSearchComponent } from './set-advanced-search/set-advanced-search.component';
+import { SetSearchConfigurationsComponent } from './set-search-configurations/set-search-configurations.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { SetAdvancedSearchComponent } from './set-advanced-search/set-advanced-s
     MaStyleGuideComponent,
     SearchComponent,
     SetAdvancedSearchComponent,
+    SetSearchConfigurationsComponent,
 
    
   ],

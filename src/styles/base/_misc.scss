@@ -1,7 +1,7 @@
 html {
   scroll-behavior: smooth;
 }
-.ma_flex{
+.set_flex{
     &--container{
       @include flexbox();
 
@@ -63,7 +63,7 @@ html {
       }
     }
 }
-.ma{
+.set{
     &--flex-box{
       @include flexbox();
       @include flex-direction(row);
@@ -90,6 +90,10 @@ html {
     }
     &--depth__5{
       @include box_shadow(5);
+    }
+
+    &-w-100{
+      width: 100%;
     }
   
   }
@@ -118,7 +122,7 @@ html {
   border-width: 2px;
   border-top-color: #707070;
 }
-.ma-btn--large{
+.set-btn--large{
   border-radius: 28px !important;
   background-color: #E91E63;
   color: #fff;
@@ -127,7 +131,7 @@ html {
   padding: 10px 30px !important;
   line-height: 30px !important;
 }
-.ma-verticle-separator{
+.set-verticle-separator{
   margin: 0 10px;
 }
 .mat-checkbox-checked{
