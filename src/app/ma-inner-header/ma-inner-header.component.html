@@ -1,0 +1,50 @@
+<div class="ma-inner-header">
+    <div class="row">
+        <div class="col-md-2 col-12 col-sm-2  d-flex align-items-center logo-col">
+            <img src="../../assets/images/logo.png">
+        </div>
+        <div class="col-md-8 col-12 col-sm-10 d-flex align-items-center">
+            <div class="ma-search-panel ma--depth__1 ma-w-100">
+                <div class="ma_flex--container">
+                    <div class="ma_flex__item ma_flex__item--vcenter p20 cat-select-col">
+                        <mat-form-field>
+                            <mat-select [(value)]="selected">
+                              <mat-option>None</mat-option>
+                              <mat-option value="option1">Option 1</mat-option>
+                              <mat-option value="option2">All Category</mat-option>
+                              <mat-option value="option3">Option 3</mat-option>
+                            </mat-select>
+                          </mat-form-field>
+                    </div>
+                    <div class="ma_flex__item ma_flex__item--vcenter p70 search-col">
+                        <mat-form-field class="example-full-width">
+                            <mat-label>What are you looking for?</mat-label>
+                            <input matInput placeholder="" value="">
+                          </mat-form-field>
+                    </div>
+                    <div class="ma_flex__item--inherit ma_flex__item--vcenter p10">
+                        <button class="btn-search" mat-button><i class="material-icons">search</i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-12 col-12 d-flex align-items-center cart-total-col">
+            <div class="ma_flex--container">
+                <div class="ma_flex__item--inherit ma_flex__item--vcenter ma-pr-10">
+                    <button class="btn-cart" mat-raised-button color="primary"
+                        matBadge="6" matBadgePosition="after" matBadgeColor="accent">
+                        <i class="material-icons">shopping_cart</i>
+                    </button>
+                </div>
+                <div class="ma_flex__item--inherit ma_flex__item--vcenter">
+                    <div class="ma_flex--container flex-column">
+                        <div class="ma_flex__item--inherit"><span class="opt-txt__body2">My Cart</span></div>
+                        <div class="ma_flex__item--inherit">
+                            <h3 class="ma__heading-3 ma-txt__primary">$456.56</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

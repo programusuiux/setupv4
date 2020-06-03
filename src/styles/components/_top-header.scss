@@ -1,0 +1,74 @@
+.ma-top-header{
+    background-color: $ma-bg-color__tertiary !important;
+    width: 100%;
+    position: relative;
+    z-index: 999;
+    justify-content: flex-end;
+    >ul{
+        @include respond-to("x-small") {
+            margin-top: 60px;
+        }
+        @include respond-to("medium") {
+            margin-top: 0px;
+        } 
+    }
+    .service-option-container{
+        
+        @include respond-to("x-small") {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        @include respond-to("medium") {
+            flex-direction: row;
+            align-items: center;
+        } 
+    }
+    .navbar-collapse{
+        @include respond-to("x-small") {
+            margin-bottom: 10px;
+        }
+        @include respond-to("medium") {
+            margin-bottom: 0px;
+        } 
+    }
+    .top-header-label{
+        padding-right: 20px;
+        @include respond-to("x-small") {
+            border:0px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        @include respond-to("medium") {
+            border-right: 1px dotted #000;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin-right: 20px;
+        } 
+    }
+    .account-settings{
+        @include respond-to("x-small") {
+            width: 100%;
+        }
+        @include respond-to("medium") {
+            width: 30%;
+        } 
+    }
+    .profile-avatar{
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        overflow: hidden;
+        img{
+            height: 30px;
+            width: 30px;
+        }
+    }
+    .mat-chip{
+        color: #AA9393;
+        background-color: #F8F8F8;
+        font-size: 14px !important;
+        font-weight: 400 !important;
+        line-height: 16px;
+        border:1px solid #CACACA;
+    }
+}

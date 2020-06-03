@@ -1,0 +1,58 @@
+<nav class="ma-top-header navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="display: none !important;">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="display: none !important;">
+        <div class="w-100">
+            <div class="row align-items-center">
+                <div class="col-md-12">
+                    <div class="ma_flex--container service-option-container">
+                        <div class="ma_flex__item--inherit">
+                            <div class="top-header-label ma-txt__body2">Service Option</div>
+                        </div>
+                        <div class="ma_flex__item--inherit">
+                            <mat-chip-list>
+                                <mat-chip>Click & Collect</mat-chip>
+                                <mat-chip>Schedule</mat-chip>
+                                <mat-chip>Deliver Now</mat-chip>
+                                <mat-chip>Appointment</mat-chip>
+                                <mat-chip>Reserve</mat-chip>
+                                <mat-chip>Express Collect</mat-chip>
+                            </mat-chip-list>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="account-settings">
+        <div class="ma_flex--container align-items-center">
+            <div class="ma_flex__item ma_flex__item--vcenter">
+                <div class="ma-txt__body2 ma-txt__primary __link">My Account</div>
+            </div>
+            <div class="ma_flex__item ma_flex__item--vcenter">
+                <mat-form-field>
+                    <mat-select [(value)]="selected">
+                      <mat-option>None</mat-option>
+                      <mat-option value="option1">Option 1</mat-option>
+                      <mat-option value="option2">$ US Dollar</mat-option>
+                      <mat-option value="option3">Option 3</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </div>
+            <div class="ma_flex__item ma_flex__item--vcenter">
+                <div class="ma_flex--container align-items-center w-100">
+                    <div class="ma_flex__item">
+                        <div class="profile-avatar"><img src="../../assets/images/profile-avatar.jpg"></div>
+                    </div>
+                    <div class="ma_flex__item">
+                        <i class="material-icons ma-txt__secondary">more_vert</i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </nav>
+

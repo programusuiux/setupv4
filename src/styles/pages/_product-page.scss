@@ -1,0 +1,40 @@
+.ma-product-page{
+    background-color: #fff;
+    .ma-top-header{
+        margin-bottom: 30px;
+    }
+    .ma-inner-header{
+        margin-bottom: 40px;
+    }
+    .menu-container{
+        position: relative;
+    }
+    .product-details-container{
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .product-select-container{
+        margin-top: 30px;
+        margin-bottom: 50px;
+        .section-container{
+            margin-bottom: 40px;
+        }
+        .section-title{
+            margin-bottom: 30px;
+            h2{
+                margin-bottom: 10px;
+            }
+        }
+        .mat-divider--dashed{
+            margin:15px 0px !important;
+        }
+        .right-col{
+            >.ma_flex--container{
+                height: 100%;
+            }
+            .card-outer-wrapper{
+                margin: 0;
+            }
+        }
+    }
+}

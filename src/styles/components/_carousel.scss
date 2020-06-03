@@ -1,0 +1,111 @@
+.carousel-inner{
+    min-height: 500px;
+    display: flex;
+    .carousel-item{
+        max-height: unset;
+        img{
+            @include respond-to("x-small") {
+                max-height: unset !important;
+                height: 100%;
+            }
+            @include respond-to("medium") {
+                max-height: unset !important;
+                height: unset;
+            }
+        }
+    }
+}
+.carousel-description{
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    left: 0;
+    z-index: 14;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    display: flex;
+    justify-content: center;
+    h1, h2{
+        margin:10px 0px;
+    }
+    .btn-carousel{
+        background-color: #FFDD00;
+        color: #FFFFFF;
+        padding: 0px 30px;
+        border-radius: 18px;
+        margin: 40px 0px;
+    }
+    &--vendor{
+        position: absolute;
+        right: 0;
+        bottom: 50px;
+        left: 0;
+        z-index: 14;
+        margin-right: 10%;
+        margin-left: 10%;
+        color: #fff;
+        background-color: #00000096;
+        padding: 30px;
+        @include respond-to("x-small") {
+            margin-right: 0%;
+            margin-left: 0%;
+        }
+        @include respond-to("medium") {
+            margin-right: 10%;
+            margin-left: 10%;
+        }
+        .ratings{
+            margin: 10px 0px;
+        }
+        .btn-select{
+            max-width: 250px;
+            text-align: left;
+            background-color: #ffffff5c;
+            padding: 5px 15px;
+            margin-top: 15px;
+        }
+    }
+}
+
+.ma-carousel-secondary{
+    @include respond-to("x-small") {
+        margin-bottom: 30px;
+    }
+    @include respond-to("medium") {
+        margin-bottom: 0px;
+    }
+    .image-preview{
+        @include respond-to("x-small") {
+            margin-bottom: 20px;
+        }
+        @include respond-to("medium") {
+            margin-bottom: 50px;
+        }
+        img{
+            width: 100%;
+        }
+    }
+    .icon-previous, .icon-next{
+        color: #837C7C;
+        font-size: 24px;
+    }
+    .carousel-thumbnail{
+        margin: 0 15px;
+        display: flex;
+        img{
+            @include respond-to("x-small") {
+                width: 30px;
+            }
+            @include respond-to("medium") {
+                width: 100px;
+            }
+        }
+        &:hover{
+            cursor: pointer;
+        }
+        &.thumbnail--active{
+            border: 3px solid $ma_color_primary;
+        }
+    }
+}

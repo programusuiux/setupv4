@@ -1,0 +1,154 @@
+.ma-search-result-page{
+    background-color: #fff;
+    .ma-top-header{
+        margin-bottom: 30px;
+    }
+    .ma-inner-header{
+        margin-bottom: 50px;
+    }
+    .menu-container{
+        position: relative;
+    }
+    .search-options-container{
+        margin-top: 30px;
+    }
+    .filter-menu-toggle{
+        min-width: 150px;
+        min-height: 60px;
+        padding: 10px 20px;
+        justify-content: space-between;
+        cursor: pointer;
+        &.__active{
+            background-color: #3D3D3D;
+            color: #FFFFFF;
+        }
+    }
+    .recently-viewed{
+        min-width: 200px;
+        padding: 10px 20px;
+        justify-content: space-between;
+    }
+    .recent-items{
+        display: flex;
+        padding-left: 0px;
+        .__link{
+            &:hover{
+                color: $ma_color_primary;
+            }
+        }
+    }
+    .search-filter-panel{
+        @include respond-to("x-small") {
+            position: absolute;
+            z-index: 999;
+            left: 0;
+            padding:0px;
+        }
+        @include respond-to("medium") {
+            position: inherit;
+            min-width: 320px;
+        } 
+    }
+    .search-result-items-wrapper{
+        background-color: #f8f9fa;
+        width: 100%;
+        @include respond-to("x-small") {
+            padding: 0px;
+        }
+        @include respond-to("medium") {
+            padding: 25px;
+        }   
+        .sr-breadcrumb{
+            margin: 10px 0px;
+            @include respond-to("x-small") {
+                padding-left: 10px;
+            }
+            @include respond-to("medium") {
+                padding-left: 0px;
+            } 
+        }
+        .sr-availability{
+            margin: 20px 0px;
+            @include respond-to("x-small") {
+                padding-left: 10px;
+            }
+            @include respond-to("medium") {
+                padding-left: 0px;
+            } 
+        }
+        .sorted-by-label{
+            @include respond-to("x-small") {
+                margin: 10px 0px;
+            }
+            @include respond-to("medium") {
+                margin: 10px 0px;
+            } 
+        }
+        .sr-toggle{
+            margin: 20px 0px;
+            min-height: 60px;
+            border-radius: 10px;
+            background-color: #fff;
+            display: flex;
+            >.ma_flex--container{
+                @include respond-to("x-small") {
+                    justify-content: center;
+                    flex-wrap: wrap;
+                }
+                @include respond-to("small") {
+                    justify-content: center;
+                    flex-wrap: nowrap;
+                }  
+            }
+            .mat-button-toggle-group{
+                border:0px;
+                //flex-wrap: wrap;
+                display: flex;                
+                @include respond-to("x-small") {
+                    justify-content: center;
+                    flex-wrap: wrap;
+                }
+                @include respond-to("small") {
+                    justify-content: center;
+                    flex-wrap: nowrap;
+                }    
+                .mat-button-toggle{
+                    min-width: 200px;
+                    min-height: 60px;
+                    display: flex;
+                    border-left: 0px;
+                    &.mat-button-toggle-checked{
+                        background-color: #FE5F93;
+                        color: #fff;
+                        border-bottom: 5px solid $ma_color_primary;
+                    }
+                }
+            }
+        }
+        .ma-search-item-card{
+            margin-bottom: 20px;
+        }
+    }
+    .paginator{
+        justify-content: center;
+        
+        @include respond-to("x-small") {
+            margin-bottom: 20px;
+            margin-top: 0px;
+         }
+         @include respond-to("medium") {
+            margin-top: 30px;
+         }
+        button{
+            border:0px;
+            font-size: 20px;
+        }
+        i{
+            font-size: 20px;
+            line-height: 20px;
+        }
+    }
+    .ma-footer{
+        margin-top: 50px;
+    }
+}
