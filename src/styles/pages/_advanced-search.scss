@@ -22,10 +22,11 @@
 }
 
 .set-advanced-search-popup{
-    height: 500px;
+    height: auto;
     background-color: #fff;
     border: 1px solid #eee;
     border-radius: 10px;
+    padding: 0 0 24px 0;
 
     .title-row{
         height: 56px;
