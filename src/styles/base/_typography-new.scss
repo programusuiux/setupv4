@@ -1,0 +1,346 @@
+// @import "../base/_tc-md-mixins-new.scss";
+// @import "../themes/default/_variables-new.scss";
+
+//Text Classes
+
+%tc-ellipsis{
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+
+.wider-text{
+white-space: normal !important;
+    max-width: 220px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.set-txt-h1{
+    @include typo-heading-1;
+    /*@extend %tc-ellipsis;*/
+}
+
+.set-txt-h2{
+    @include typo-heading-2;
+    /*@extend %tc-ellipsis;*/
+}
+
+
+.set-txt-h3{
+    @include typo-heading-3;
+    /*@extend %tc-ellipsis;*/
+}
+
+.set-txt-h3_small{
+    @include typo-heading-3_small;
+    /*@extend %tc-ellipsis;*/
+
+    &--link{
+        @include typo-heading-3_small;
+        text-decoration:underline !important;
+        cursor:pointer !important;
+       -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+         &:hover{
+            color:$set-text-color__quaternary !important;
+        }
+       
+       
+    }
+}
+
+.set-txt-h4{
+    @include typo-heading-4;
+    /*@extend %tc-ellipsis;*/
+}
+
+.set-txt-h5{
+    @include typo-heading-5;
+    /*@extend %tc-ellipsis;*/
+}
+
+
+.set-txt-b1{
+    @include typo-body-1;
+    /*@extend %tc-ellipsis;*/
+
+}
+
+.set-txt-b1_small{
+    @include typo-body-1_small;
+    /*@extend %tc-ellipsis;*/
+}
+
+
+.set-txt-b2{
+    @include typo-body-2;
+    /*@extend %tc-ellipsis;*/
+}
+
+.set-txt-b2_small{
+    @include typo-body-2_small;
+    /*@extend %tc-ellipsis;*/
+}
+
+.set-txt-b3{
+    @include typo-body-3;
+    /*@extend %tc-ellipsis;*/
+}
+
+.set-txt-s1{
+    @include typo-subtitle-1;
+    /*@extend %tc-ellipsis;*/
+    
+}
+
+.set-txt-s1_small{
+    @include typo-subtitle-1_small;
+    /*@extend %tc-ellipsis;*/
+}
+
+.set-txt-s2{
+    @include typo-subtitle-2;
+    /*@extend %tc-ellipsis;*/
+}
+
+.set-txt-s2_small{
+    @include typo-subtitle-2_small;
+    /*@extend %tc-ellipsis;*/
+}
+
+
+.set-txt-s3{
+    @include typo-subtitle-3;
+    /*@extend %tc-ellipsis;*/
+}
+
+.set-txt-s3_small{
+    @include typo-subtitle-3_small;
+    @extend %tc-ellipsis;
+}
+
+.set-txt-cap{
+    @include typo-caption;
+    @extend %tc-ellipsis;
+}
+
+
+.set-txt-p{
+    @include typo-para;
+    
+}
+
+
+//Text Colour Classes
+
+// .set-text-color{
+//     color:$set-text-color;
+    
+// }
+
+.set-text-color__primary{
+    color:$set-text-color__primary;
+}
+
+.set-text-color__secondary{
+    color:$set-text-color__secondary;
+}
+
+.set-text-color__tertiary{
+    color:$set-text-color__tertiary;
+}
+
+.set-text-color__quaternary{
+    color:$set-text-color__quaternary;
+}
+
+.set-text-color__quinary{
+    color:$set-text-color__quinary;
+}
+
+.set-text-color__senary{
+    color:$set-text-color__senary;
+}
+
+.set-text-color__special{
+    color:$set-text-color__special;
+}
+
+
+//Font Weight
+
+.set-text-light{
+    font-weight:$set-font-w-light;
+}
+
+.set-text-regular{
+    font-weight:$set-font-w-regular;
+}
+
+.set-text-medium{
+    font-weight:$set-font-w-medium;
+}
+
+.set-text-semi-bold{
+    font-weight:$set-font-w-semi-bold;
+}
+
+.set-text-bold{
+    font-weight:$set-font-w-bold;
+}
+
+.set-text-extra-bold{
+    font-weight:$set-font-w-extra-bold;
+}
+
+.set-text-black{
+    font-weight:$set-font-w-black;
+}
+
+
+//Text Transform
+
+.set-text-trans__upper{
+    text-transform:uppercase;
+}
+
+.set-text-trans__lower{
+    text-transform:lowercase;
+}
+
+.set-text-trans__sentence{
+    text-transform:inherit;
+}
+
+
+
+//Icon Colour Classes
+
+.set-ico-color{
+    color:$set-text-color;
+    
+}
+
+.set-ico-color__primary{
+    color:$set-text-color__primary;
+}
+
+.set-ico-color__secondary{
+    color:$set-text-color__secondary;
+}
+
+.set-ico-color__tertiary{
+    color:$set-text-color__tertiary;
+}
+
+.set-ico-color__quaternary{
+    color:$set-text-color__quaternary;
+}
+
+.set-ico-color__quinary{
+    color:$set-text-color__quinary;
+}
+
+
+// status
+
+.set-ico-color__status{
+
+    &-in{
+        color: $set_status_in;
+    }
+
+    &-out{
+        color: $set_status_out;
+    }
+
+}
+
+
+//Btn Colour Classes
+
+.set-btn-bg-color{
+    background-color:$set_btn-bg-color !important;
+    
+}
+
+.set-btn-bg__primary{
+    background-color:$set_btn-bg-color__primary !important;
+}
+
+.set-btn-bg__secondary{
+    background-color:$set_btn-bg-color__secondary !important;
+}
+
+.set-btn-bg__tertiary{
+    background-color:$set_btn-bg-color__tertiary !important;
+}
+
+.set-btn-bg__quaternary{
+    background-color:$set_btn-bg-color__quaternary !important;
+}
+
+
+
+
+//Line height
+
+.set-txt-lh-1{
+    line-height:1;
+}
+
+.set-txt-lh-1nh{
+    line-height:1.5;
+}
+
+.set-txt-lh-2{
+    line-height:2;
+}
+
+
+//Text allign
+
+.set-txt-algn-l{
+    text-align:left;
+}
+
+.set-txt-algn-r{
+    text-align:right;
+}
+
+.set-txt-algn-c{
+    text-align:center;
+}
+
+//Mat Icon
+
+.set-icn{
+    
+    &-small{
+    font-size:1rem;
+}
+&-medium{
+    font-size:20px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

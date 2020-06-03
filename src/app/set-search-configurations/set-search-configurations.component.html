@@ -1,1 +1,185 @@
-<p>set-search-configurations works!</p>
+<div class="set-search-config">
+    <div class="set_flex--container set-w-100 title-row my-4">        
+        <div class="set_flex__item set_flex__item--vcenter mx-3">
+            <div class="set-txt-h3_small">
+                Search Configurations
+            </div>
+        </div>
+    </div>
+
+    <div class="set-advanced-search">
+        <app-set-advanced-search></app-set-advanced-search>
+    </div>
+
+    <div class="set_flex--container set-w-100 filter-row set--depth__1 mt-4">        
+        <div class="set_flex__item set_flex__item--vcenter mx-3">
+            <mat-chip-list class="set-chip-filter-list" aria-label="Fish selection">
+                <mat-chip class="set-mat-chip">
+                    <div class="set_flex--container h-100">        
+                        <div class="set_flex__item set_flex__item--vcenter">
+                            <mat-icon class="">done</mat-icon>
+                        </div>
+
+                        <div class="set_flex__item set_flex__item--vcenter">
+                            <mat-form-field appearance="none" floatLabel="never">        
+                                <mat-select [(value)]="selected">
+                                  <mat-option value="option1">All</mat-option>
+                                  <mat-option value="option2">Option</mat-option>
+                                </mat-select> 
+                              </mat-form-field>
+                        </div>
+                    </div>
+                </mat-chip>
+                
+              </mat-chip-list>
+        </div>
+    </div>
+
+    <div class="set_flex--container set-w-100 edit-row">        
+        <div class="set_flex__item set_flex__item--vcenter p20">
+            <div class="ml-4 set-txt-s2 set-text-color__secondary"><span>5</span> Items found</div>
+        </div>
+
+        <div class="set_flex__item set_flex__item--vcenter p70">
+            <button class="set-txt-s2 set-text-color__primary" mat-button><mat-icon class="set-icn-small">delete</mat-icon>Delete<span class="mx-1">3</span>items </button>
+        </div>
+    </div>
+
+    <div class="set-search-config-result">
+
+        <mat-accordion>
+             <mat-expansion-panel hideToggle="true" [disabled]="true">
+              <mat-expansion-panel-header collapsedHeight="56px" expandedHeight="56px">
+                <div class="set_flex--container set-w-100 h-100">        
+                    <div class="set_flex__item set_flex__item--vcenter">
+                        <mat-checkbox></mat-checkbox>
+                    </div>
+    
+                    <div class="set_flex__item set_flex__item--vcenter set_flex__item--hcenter p5">
+                        
+                    </div>
+    
+                    <div class="set_flex__item set_flex__item--vcenter p40">
+                        <div class="set-txt-s2 set-text-color__primary">Name</div>
+                    </div>
+    
+                    <div class="set_flex__item set_flex__item--vcenter p40">
+                        <div class="set-txt-s2 set-text-color__primary">Frequency</div>
+                    </div>
+    
+                    <div class="set_flex__item set_flex__item--vcenter set_flex__item--hcenter p15">
+                        <div class="set-txt-s2 set-text-color__primary">Actions</div>
+                    </div>
+                </div>
+              </mat-expansion-panel-header>
+            </mat-expansion-panel>   
+            
+            
+            <mat-expansion-panel hideToggle="true" [disabled]="true">
+              <mat-expansion-panel-header collapsedHeight="56px" expandedHeight="56px">
+                <div class="set_flex--container set-w-100 h-100">        
+                    <div class="set_flex__item set_flex__item--vcenter">
+                        <mat-checkbox></mat-checkbox>
+                    </div>
+    
+                    <div class="set_flex__item set_flex__item--vcenter set_flex__item--hcenter p5">
+                        <div class="config-icon d-flex">
+                            <span class="material-icons set-icn-small set-ico-color__status-in">insert_drive_file</span>
+                        </div>
+                    </div>
+    
+                    <div class="set_flex__item set_flex__item--vcenter p40">
+                        <div class="config-name">
+                            <div class="title set-txt-s3 set-text-color__primary">BTX - Daily Pre-paid billing schedule</div>
+                            <div class="type set-txt-s1 set-text-color__tertiary">Excel</div>
+                        </div>
+                       
+                    </div>
+    
+                    <div class="set_flex__item set_flex__item--vcenter p40">
+                        <div class="frequency set-txt-s1 set-text-color__secondary">Daily</div>
+                    </div>
+    
+                    <div class="set_flex__item set_flex__item--vcenter set_flex__item--hend p15">
+                        <div class="config-actions">
+                            <button mat-icon-button>
+                                <mat-icon class="set-icn-small">edit</mat-icon>
+                            </button>
+                            <button mat-icon-button>
+                                <mat-icon class="set-icn-small">delete</mat-icon>
+                            </button>
+                            <button mat-icon-button [matMenuTriggerFor]="actionbtnpopup">
+                                <mat-icon class="set-icn-small">more_vert</mat-icon>
+                            </button>
+
+                            <mat-menu class="action-popup" #actionbtnpopup="matMenu">
+                                <button mat-menu-item>Action 1</button>
+                                <button mat-menu-item>Action 2</button>
+                            </mat-menu>
+
+                        </div>
+                    </div>
+                </div>
+              </mat-expansion-panel-header>
+            </mat-expansion-panel>     
+
+            <mat-expansion-panel hideToggle="true" [disabled]="true">
+                <mat-expansion-panel-header collapsedHeight="56px" expandedHeight="56px">
+                  <div class="set_flex--container set-w-100 h-100">        
+                      <div class="set_flex__item set_flex__item--vcenter">
+                          <mat-checkbox></mat-checkbox>
+                      </div>
+      
+                      <div class="set_flex__item set_flex__item--vcenter set_flex__item--hcenter p5">
+                          <div class="config-icon d-flex">
+                              <span class="material-icons set-icn-small set-ico-color__status-out">insert_drive_file</span>
+                          </div>
+                      </div>
+      
+                      <div class="set_flex__item set_flex__item--vcenter p40">
+                          <div class="config-name">
+                              <div class="title set-txt-s3 set-text-color__primary">BTX - Daily Pre-paid billing schedule</div>
+                              <div class="type set-txt-s1 set-text-color__tertiary">Excel</div>
+                          </div>
+                         
+                      </div>
+      
+                      <div class="set_flex__item set_flex__item--vcenter p40">
+                          <div class="frequency set-txt-s1 set-text-color__secondary">Daily</div>
+                      </div>
+      
+                      <div class="set_flex__item set_flex__item--vcenter set_flex__item--hend p15">
+                          <div class="config-actions">
+                              <button mat-icon-button>
+                                  <mat-icon class="set-icn-small">edit</mat-icon>
+                              </button>
+                              <button mat-icon-button>
+                                  <mat-icon class="set-icn-small">delete</mat-icon>
+                              </button>
+                              <button mat-icon-button [matMenuTriggerFor]="actionbtnpopup">
+                                  <mat-icon class="set-icn-small">more_vert</mat-icon>
+                              </button>
+  
+                              <mat-menu class="action-popup" #actionbtnpopup="matMenu">
+                                  <button mat-menu-item>Action 1</button>
+                                  <button mat-menu-item>Action 2</button>
+                              </mat-menu>
+  
+                          </div>
+                      </div>
+                  </div>
+                </mat-expansion-panel-header>
+              </mat-expansion-panel>     
+          </mat-accordion>
+    
+    
+       
+    </div>
+</div>
+
+<mat-paginator [length]="100"
+              [pageSize]="10"
+              [pageSizeOptions]="[5, 10, 25, 100]">
+</mat-paginator>
+
+

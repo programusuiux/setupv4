@@ -1,19 +1,22 @@
 @import "layout/layout";
 
 @import "abstracts/mixins";
+@import "abstracts/mixins-new";
 @import "abstracts/flexbox";
-@import "abstracts/variables";
+// @import "abstracts/variables";
 @import "abstracts/variables-new";
 @import "abstracts/icon-font";
 
 @import "base/reset";
 @import "base/misc";
 @import "base/typography";
+@import "base/typography-new";
 @import "base/utilities";
 @import "base/colors";
 @import "base/library";
 
 
-@import "pages/advanced-search"
+@import "pages/advanced-search";
+@import "pages/search-configuration";
 
 //Theming

@@ -6,10 +6,10 @@ import { SetAdvancedSearchComponent } from './set-advanced-search/set-advanced-s
 import { SetSearchConfigurationsComponent } from './set-search-configurations/set-search-configurations.component';
 
 const routes: Routes = [
-  { path: 'ma-style-guide', component: MaStyleGuideComponent },
+  { path: 'styleguide', component: MaStyleGuideComponent },
   { path: 'search', component: SearchComponent },
-  { path: 'set-advanced-search', component: SetAdvancedSearchComponent },
-  { path: 'set-search-configurations', component: SetSearchConfigurationsComponent },
+  { path: 'advancedsearch', component: SetAdvancedSearchComponent },
+  { path: 'searchconfig', component: SetSearchConfigurationsComponent },
 
   // { path: '', redirectTo: '/sign-in-page', pathMatch: 'full' },
   // { path: '**', redirectTo: '/sign-in-page', pathMatch: 'full' }

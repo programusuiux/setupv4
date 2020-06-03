@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./set-advanced-search.component.scss']
 })
 export class SetAdvancedSearchComponent implements OnInit {
-
+  selected = 'option1';
   constructor() { }
 
   ngOnInit(): void {

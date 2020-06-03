@@ -1,0 +1,40 @@
+.set-search-config{
+    background-color: #fafafa;
+    border: 1px solid #eee;
+    margin: 16px;
+    padding: 0 16px 24px 16px;
+
+
+    .filter-row{
+        background-color: #fff;
+        height: 56px;
+
+        .mat-form-field-infix{
+            top: 4px !important;
+        }
+    }
+
+    .edit-row{
+        height: 56px;
+    }
+
+    .set-search-config-result{
+
+        .mat-expansion-panel-header[aria-disabled=true]{
+            color: #000;
+        }
+
+        .mat-content{
+            overflow:unset !important;
+        }
+        .config-icon{
+            height: 40px;
+            width: 40px;
+            background-color: #eee;
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+

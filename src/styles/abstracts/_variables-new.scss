@@ -1,4 +1,4 @@
-//@import "../../base/_colors-new.scss";
+@import "../base/_colors.scss";
 
 
 $base-text-color: #000;
@@ -11,189 +11,196 @@ $darker: darken($color-base,87%);
 
 //Font Family..............................................
 
-$font-montserrat: "Montserrat", sans-serif;
+// Typography
+$font-family-sans-serif: 'Roboto', 'Helvetica', 'Arial', sans-serif !default;
+$font-family-serif: 'Roboto Slab', 'Times New Roman', serif !default;
+$font-family-rubik:  'Rubik', sans-serif;
 
 //Font Weight..............................................
 
-$ma-font-w-light: 300;
-$ma-font-w-regular: 400;
-$ma-font-w-medium: 500;
-$ma-font-w-semi-bold: 600;
-$ma-font-w-bold: 700;
-$ma-font-w-extra-bold: 800;
-$ma-font-w-black: 900;
+$set-font-w-light: 300;
+$set-font-w-regular: 400;
+$set-font-w-medium: 500;
+$set-font-w-semi-bold: 600;
+$set-font-w-bold: 700;
+$set-font-w-extra-bold: 800;
+$set-font-w-black: 900;
 
 //General Colours..............................................
 
-$ma-color__white:$ma_color_white !default;
-$ma-color__red:$red-500;
-$ma-color__pink:$pink-500;
-$ma-color__blue:$blue-500;
-$ma-color__light-blue:$light-blue-500;
-$ma-color__teal:$teal-500;
-$ma-color__yellow:$yellow-500;
-$ma-color__amber:$amber-500;
+// $set-color__white:$set_color_white !default;
+$set-color__red:$red-500;
+$set-color__pink:$pink-500;
+$set-color__blue:$blue-500;
+$set-color__light-blue:$light-blue-500;
+$set-color__teal:$teal-500;
+$set-color__yellow:$yellow-500;
+$set-color__amber:$amber-500;
 
 
 //Bussiness Colours..............................................
 
-$ma-color:#994198 !default;
-$ma-color__primary:#ed3e84;
-$ma-color__secondary:#cbdd59;
-$ma-color__tertiary:#3d9b47;
-$ma-color__quaternary:#27bfc2 !default;
-$ma-color__quinary:#27bfc2 !default;
+$set-color:#994198 !default;
+$set-color__primary:#ed3e84;
+$set-color__secondary:#cbdd59;
+$set-color__tertiary:#3d9b47;
+$set-color__quaternary:#27bfc2 !default;
+$set-color__quinary:#27bfc2 !default;
 
 
 //Text Colours..............................................
+$set-text-color:#000;
+$set-text-color__light:#ffffff;
+$set-text-color__dark:#000;
 
-$ma-text-color__light:#ffffff;
-$ma-text-color__dark:#000;
-
-$ma-text-color__primary:#E91E63 !default;
-$ma-text-color__secondary:#212121 !default;
-$ma-text-color__tertiary:#837C7C;
-$ma-text-color__quaternary:#CDDC39;
-$ma-text-color__quinary:#DADADA;
-// $ma-text-color__senary:$red-500;
-// $ma-text-color__special:#FFEB3B;
+$set-text-color__primary:#000000de !default;
+$set-text-color__secondary:#616161 !default;
+$set-text-color__tertiary:#757575;
+$set-text-color__quaternary:#CDDC39;
+$set-text-color__quinary:#DADADA;
+$set-text-color__senary:$red-500;
+$set-text-color__special:#FFEB3B;
 
 
 //Icon Button Colours..............................................
 
-$ma_btn-icon-bg-color:$ma_color_white;
-$ma_btn-icon-bg-color__primary:#ED3E84;
-$ma_btn-icon-bg-color__secondary:#009688;
-$ma_btn-icon-bg-color__tertiary:#FF9800;
-$ma_btn-icon-bg-color__quaternary:#3fba74;
+$set_btn-icon-bg-color:$set_color_white;
+$set_btn-icon-bg-color__primary:#ED3E84;
+$set_btn-icon-bg-color__secondary:#009688;
+$set_btn-icon-bg-color__tertiary:#FF9800;
+$set_btn-icon-bg-color__quaternary:#3fba74;
 
 
 //Icon Button text Colours..............................................
 
-$ma_icon-btn-text-color:$ma_color_white;
-$ma_icon-btn-text-color__primary:#ED3E84;
-$ma_icon-btn-text-color__secondary:#009688;
-$ma_icon-btn-text-color__tertiary:#f44336;
-$ma_icon-btn-text-color__quaternary:#f44336;
-$ma_icon-btn-text-color__quinary:#ED3E84;
+$set_icon-btn-text-color:$set_color_white;
+$set_icon-btn-text-color__primary:#ED3E84;
+$set_icon-btn-text-color__secondary:#009688;
+$set_icon-btn-text-color__tertiary:#f44336;
+$set_icon-btn-text-color__quaternary:#f44336;
+$set_icon-btn-text-color__quinary:#ED3E84;
 
 //Button Colours..............................................
 
-$ma_btn-bg-color:$ma_color_white;
+$set_btn-bg-color:$set_color_white;
 
 
-$ma_btn-bg-color__primary:#E91E63;
-$ma_btn-bg-color__secondary:#FFDD00;
-$ma_btn-bg-color__tertiary:#3fba74;
-$ma_btn-bg-color__quaternary: #E0E0E0;
-$ma_btn-bg-color__quinary: $ma_color_white;
-$ma_btn-bg-color__gradient: linear-gradient(-241deg, #2388f0 0%, #00698f 100%);
+$set_btn-bg-color__primary:#E91E63;
+$set_btn-bg-color__secondary:#FFDD00;
+$set_btn-bg-color__tertiary:#3fba74;
+$set_btn-bg-color__quaternary: #E0E0E0;
+$set_btn-bg-color__quinary: $set_color_white;
+$set_btn-bg-color__gradient: linear-gradient(-241deg, #2388f0 0%, #00698f 100%);
 
 
 //Button text Colours..............................................
 
-$ma_btn-text-color__light:#ffffff;
-$ma_btn-text-color__dark:#000;
+$set_btn-text-color__light:#ffffff;
+$set_btn-text-color__dark:#000;
 
-$ma_btn-text-color__primary:#006FF8;
-$ma_btn-text-color__secondary:#ED3E84;
-$ma_btn-text-color__tertiary:#009688;
-$ma_btn-text-color__quaternary:#f44336;
-$ma_btn-text-color__quinary:#ED3E84;
+$set_btn-text-color__primary:#006FF8;
+$set_btn-text-color__secondary:#ED3E84;
+$set_btn-text-color__tertiary:#009688;
+$set_btn-text-color__quaternary:#f44336;
+$set_btn-text-color__quinary:#ED3E84;
 
 
 //Button Border line Colors.........................................
 
-$ma-btn-border-color:$ma_color_white; 
-$ma-btn-border-color__primary:#006FF8;
-$ma-btn-border-color__secondary:#ed3e84 !default;
-$ma-btn-border-color__tertiary:#3a424d;
-$ma-btn-border-color__quaternary:#27bfc2 !default;
-$ma-btn-border-color__quinary:#27bfc2 !default;
+$set-btn-border-color:$set_color_white; 
+$set-btn-border-color__primary:#006FF8;
+$set-btn-border-color__secondary:#ed3e84 !default;
+$set-btn-border-color__tertiary:#3a424d;
+$set-btn-border-color__quaternary:#27bfc2 !default;
+$set-btn-border-color__quinary:#27bfc2 !default;
 
 //Border line Colors.........................................
 
-$ma-border-color:$grey-200 !default;
+$set-border-color:$grey-200 !default;
 
-$ma-border-color__primary:#cacaca;
-$ma-border-color__secondary:$grey-700 !default;
-$ma-border-color__tertiary:#3a424d;
-$ma-border-color__quaternary:#27bfc2 !default;
-$ma-border-color__quinary:#f5f5f5 !default;
+$set-border-color__primary:#cacaca;
+$set-border-color__secondary:$grey-700 !default;
+$set-border-color__tertiary:#3a424d;
+$set-border-color__quaternary:#27bfc2 !default;
+$set-border-color__quinary:#f5f5f5 !default;
 
 //Link Colours..............................................
 
-$ma-link-color:#006FF8 !default;
-$ma-link-color__primary:#3a424d;
-$ma-link-color__secondary:#27bfc2 !default;
-$ma-link-color__tertiary:#3a424d;
-$ma-link-color__quaternary:#27bfc2 !default;
-$ma-link-color__quinary:#27bfc2 !default;
+$set-link-color:#006FF8 !default;
+$set-link-color__primary:#3a424d;
+$set-link-color__secondary:#27bfc2 !default;
+$set-link-color__tertiary:#3a424d;
+$set-link-color__quaternary:#27bfc2 !default;
+$set-link-color__quinary:#27bfc2 !default;
 
 //State Colours..............................................
 
-$ma_status_paid :#009688;
-$ma_status_pending :#FF9800;
-$ma_status_cancelled :#9E9E9E;
+$set_status_paid :#009688;
+$set_status_pending :#FF9800;
+$set_status_cancelled :#9E9E9E;
 
-$ma_status_open :#CDDC39;
-$ma_status_closed :#009688;
+$set_status_open :#CDDC39;
+$set_status_closed :#009688;
 
-$ma_status_confirmed :#f5766c;
-$ma_status_confirmed-multiple:#607d8b !default;
-$ma_status_provisional :#00bcd4;
-$ma_status_warning :#ff9800;
-$ma_status_tentative :#673ab7;
-$ma_status_good_availability :#2c95dc !default;
-$ma_status_few_availability :#f44336 !default;
+$set_status_in :#FF5722;
+$set_status_out :#4CAF50;
+
+
+$set_status_confirmed :#f5766c;
+$set_status_confirmed-multiple:#607d8b !default;
+$set_status_provisional :#00bcd4;
+$set_status_warning :#ff9800;
+$set_status_tentative :#673ab7;
+$set_status_good_availability :#2c95dc !default;
+$set_status_few_availability :#f44336 !default;
 
 //Background Colours..............................................
 
-$ma-bg-color__light:#ffffff !default;
-$ma-bg-color__dark:#000 !default;
+$set-bg-color__light:#ffffff !default;
+$set-bg-color__dark:#000 !default;
 
 
-$ma-bg-color__primary:#E91E63;
-$ma-bg-color__secondary:#BDBDBD !default;
-$ma-bg-color__tertiary:#F8F8F8;
-$ma-bg-color__quaternary:#2b2b2b !default;
-$ma-bg-color__quinary:#FCF6F8 !default;
-$ma-bg-color__senary:#212121 !default;
+$set-bg-color__primary:#E91E63;
+$set-bg-color__secondary:#BDBDBD !default;
+$set-bg-color__tertiary:#F8F8F8;
+$set-bg-color__quaternary:#2b2b2b !default;
+$set-bg-color__quinary:#FCF6F8 !default;
+$set-bg-color__senary:#212121 !default;
 
-$ma-bg-color__header:#F8F8F8 !default;
-$ma-bg-color__footer:#2b2b2b !default;
+$set-bg-color__header:#F8F8F8 !default;
+$set-bg-color__footer:#2b2b2b !default;
 
 //Badge Background Colours..............................................
 
-$ma-badge-bg-color:$ma_color_white !default;
-$ma-badge-bg-color__primary:#ed3e84;
-$ma-badge-bg-color__secondary:#994198 !default;
-$ma-badge-bg-color__tertiary:$grey-200;
-$ma-badge-bg-color__quaternary:#f7faff !default;
-$ma-badge-bg-color__quinary:#FCF6F8 !default;
+$set-badge-bg-color:$set_color_white !default;
+$set-badge-bg-color__primary:#ed3e84;
+$set-badge-bg-color__secondary:#994198 !default;
+$set-badge-bg-color__tertiary:$grey-200;
+$set-badge-bg-color__quaternary:#f7faff !default;
+$set-badge-bg-color__quinary:#FCF6F8 !default;
 
 //Badge Text Colours..............................................
 
-$ma-badge-text-color:$ma_color_white !default;
-$ma-badge-text-color__primary:#ed3e84;
-$ma-badge-bg-color__secondary:#994198 !default;
-$ma-badge-bg-color__tertiary:$grey-200;
-$ma-badge-bg-color__quaternary:#f7faff !default;
-$ma-badge-bg-color__quinary:#FCF6F8 !default;
+$set-badge-text-color:$set_color_white !default;
+$set-badge-text-color__primary:#ed3e84;
+$set-badge-bg-color__secondary:#994198 !default;
+$set-badge-bg-color__tertiary:$grey-200;
+$set-badge-bg-color__quaternary:#f7faff !default;
+$set-badge-bg-color__quinary:#FCF6F8 !default;
 
 
 //Icon Colours..............................................
 
-$ma-icon-color:$ma_color_white !default;
-$ma-icon-color__primary:$grey-500;
-$ma-icon-color__secondary:$grey-700 !default;
-$ma-icon-color__tertiary:#ED3E84;
-$ma-icon-color__quaternary:#F6F9FC !default;
-$ma-icon-color__quinary:#F6F9FC !default;
+$set-icon-color:$set_color_white !default;
+$set-icon-color__primary:$grey-500;
+$set-icon-color__secondary:$grey-700 !default;
+$set-icon-color__tertiary:#ED3E84;
+$set-icon-color__quaternary:#F6F9FC !default;
+$set-icon-color__quinary:#F6F9FC !default;
 
 
 
 //shadow Colors
 
-$ma-box-shadow-color__primary:$grey-400;
-$ma-box-shadow-color__secondary:$grey-500;
+$set-box-shadow-color__primary:$grey-400;
+$set-box-shadow-color__secondary:$grey-500;

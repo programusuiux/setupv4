@@ -1,37 +1,177 @@
-
- <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 d-flex align-items-center mb-2 mt-3">
+<div class="row">
+    
+ <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 d-flex align-items-center">
     <div class="set-search-panel set--depth__1 set-w-100">
         <div class="set_flex--container h-100">
             
-            <div class="set_flex__item ma_flex__item--vcenter p70 search-col">
+            <div class="set_flex__item set_flex__item--vcenter p70 search-col">
                 <mat-form-field class="w-100 ml-3" appearance="none" floatLabel="never">
                     <!-- <mat-label>Search</mat-label> -->
                     <input matInput placeholder="Search" value="">
                   </mat-form-field>
             </div>
             <div class="set_flex__item set_flex__item--vcenter set_flex__item--inherit cat-select-col">
-                <button mat-icon-button [matMenuTriggerFor]="advancedsearchpopup">
+                <button mat-icon-button>
                     <mat-icon>arrow_drop_down</mat-icon>
                   </button>
 
-                  <mat-menu class="advanced-search-popup" #advancedsearchpopup="matMenu" (click) = "$event.stopPropagation()">
-                      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                        <mat-form-field class="" appearance="none" floatLabel="never">
-                            <mat-select>
-                                <mat-option value="option">Option</mat-option>
-                              </mat-select>
-                          </mat-form-field>
-                      </div>
-                      
-                    
-                  
-                  </mat-menu>
-
-
             </div>
             <div class="set_flex__item--inherit set_flex__item--vcenter p10">
-                <button class="btn-search" mat-button><i class="material-icons">search</i></button>
+                <button class="btn-search" mat-button><i class="material-icons set-ico-color__primary">search</i></button>
             </div>
+        </div>
+    </div>
+</div>
+
+
+</div>
+
+<div class="set-advanced-search-popup mt-2">
+    <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xl-12">
+            <div class="set_flex--container title-row">
+                <div class="set_flex__item set_flex__item--vcenter mx-3">
+                    <div class="set-txt-h5">
+                        Advanced Search
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div class="set_flex--container content-row">
+                <div class="set_flex__item set_flex__item--vcenter mx-3 p20">
+                    <div class="set-txt-s2">
+                        Integration type
+                    </div>
+                </div>
+                <div class="set_flex__item set_flex__item--vcenter mx-3">
+                    <mat-form-field floatLabel="never">        
+                        <mat-select [(value)]="selected">
+                          <mat-option value="option1">All</mat-option>
+                          <mat-option value="option2">Option</mat-option>
+                        </mat-select> 
+                      </mat-form-field>
+                </div>
+            </div>   
+        </div>
+
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div class="set_flex--container title-row">
+                <div class="set_flex__item set_flex__item--vcenter mx-3 p20">
+                    <div class="set-txt-s2">
+                        Trigger
+                    </div>
+                </div>
+                <div class="set_flex__item set_flex__item--vcenter mx-3">
+                    <mat-form-field floatLabel="never">        
+                        <mat-select [(value)]="selected">
+                          <mat-option value="option1">All</mat-option>
+                          <mat-option value="option2">Option</mat-option>
+                        </mat-select> 
+                      </mat-form-field>
+                </div>
+            </div>   
+        </div>
+
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div class="set_flex--container title-row">
+                <div class="set_flex__item set_flex__item--vcenter mx-3 p20">
+                    <div class="set-txt-s2">
+                        Schdule
+                    </div>
+                </div>
+                <div class="set_flex__item set_flex__item--vcenter mx-3">
+                    <mat-form-field floatLabel="never">        
+                        <mat-select [(value)]="selected">
+                          <mat-option value="option1">All</mat-option>
+                          <mat-option value="option2">Option</mat-option>
+                        </mat-select> 
+                      </mat-form-field>
+                </div>
+            </div>   
+        </div>
+
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div class="set_flex--container title-row">
+                <div class="set_flex__item set_flex__item--vcenter mx-3 p20">
+                    <div class="set-txt-s2">
+                        Output type
+                    </div>
+                </div>
+                <div class="set_flex__item set_flex__item--vcenter mx-3">
+                    <mat-form-field floatLabel="never">        
+                        <mat-select [(value)]="selected">
+                          <mat-option value="option1">All</mat-option>
+                          <mat-option value="option2">Option</mat-option>
+                        </mat-select> 
+                      </mat-form-field>
+                </div>
+            </div>   
+        </div>
+
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div class="set_flex--container title-row">
+                <div class="set_flex__item set_flex__item--vcenter mx-3 p20">
+                    <div class="set-txt-s2">
+                        Entity type
+                    </div>
+                </div>
+                <div class="set_flex__item set_flex__item--vcenter mx-3">
+                    <mat-form-field floatLabel="never">        
+                        <mat-select [(value)]="selected">
+                          <mat-option value="option1">All</mat-option>
+                          <mat-option value="option2">Option</mat-option>
+                        </mat-select> 
+                      </mat-form-field>
+                </div>
+            </div>   
+        </div>
+
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div class="set_flex--container title-row">
+                <div class="set_flex__item set_flex__item--vcenter mx-3 p20">
+                    <div class="set-txt-s2">
+                        Created by
+                    </div>
+                </div>
+                <div class="set_flex__item set_flex__item--vcenter mx-3">
+                    <mat-form-field floatLabel="never">        
+                        <mat-select [(value)]="selected">
+                          <mat-option value="option1">All</mat-option>
+                          <mat-option value="option2">Option</mat-option>
+                        </mat-select> 
+                      </mat-form-field>
+                </div>
+            </div>   
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div class="set_flex--container action-row">
+                <div class="set_flex__item set_flex__item--vcenter mx-3 p20">
+                    <div class="set-txt-s2">
+                        Show active
+                    </div>
+                </div>
+
+                <div class="set_flex__item set_flex__item--vcenter set_flex__item--hstart p60">
+                    <mat-checkbox></mat-checkbox>
+                </div>
+            </div>   
+        </div>
+
+        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+            <div class="set_flex--container action-row">
+                <div class="set_flex__item set_flex__item--vcenter set_flex__item--hend mx-3 p20">
+                    <button class="mx-3" mat-stroked-button>Clear Filters</button>
+                    <button mat-raised-button>Apply Filters</button>
+                </div>
+ 
+            </div>   
         </div>
     </div>
 </div>

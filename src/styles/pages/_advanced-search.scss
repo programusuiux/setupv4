@@ -4,17 +4,30 @@
     overflow: hidden;
     height: 48px;
 
+
+    .mat-form-field-infix{
+        top: 4px;
+    }
     // .mat-form-field-underline{
     //     display: none !important;
     // }
-.advanced-search-popup{
-    width: 500px !important;
-}
+
 
     .btn-search {
         height: 100%;
         background-color: #ffd740;
         border-radius: 0px;
         color: #fff;
+    }
+}
+
+.set-advanced-search-popup{
+    height: 500px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+
+    .title-row{
+        height: 56px;
     }
 }
