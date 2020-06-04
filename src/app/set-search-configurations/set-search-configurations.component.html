@@ -32,15 +32,17 @@
                 </mat-chip>
                 
               </mat-chip-list>
+
+              <button class="set-btn-outline-bg__primary mx-3" mat-button>Clear Filters</button>
         </div>
     </div>
 
     <div class="set_flex--container set-w-100 edit-row">        
         <div class="set_flex__item set_flex__item--vcenter p20">
-            <div class="ml-4 set-txt-s2 set-text-color__secondary"><span>5</span> Items found</div>
+            <div class="ml-4 set-txt-s2 set-text-color__secondary"><span>5</span> Items Found</div>
         </div>
 
-        <div class="set_flex__item set_flex__item--vcenter p70">
+        <div class="set_flex__item set_flex__item--vcenter p70 d-none">
             <button class="set-txt-s2 set-text-color__primary" mat-button><mat-icon class="set-icn-small">delete</mat-icon>Delete<span class="mx-1">3</span>items </button>
         </div>
     </div>
@@ -55,7 +57,7 @@
                         <mat-checkbox></mat-checkbox>
                     </div>
     
-                    <div class="set_flex__item set_flex__item--vcenter set_flex__item--hcenter p5">
+                    <div class="set_flex__item set_flex__item--vcenter set_flex__item--hcenter set-w40 mx-2">
                         
                     </div>
     
@@ -63,11 +65,11 @@
                         <div class="set-txt-s2 set-text-color__primary">Name</div>
                     </div>
     
-                    <div class="set_flex__item set_flex__item--vcenter p40">
+                    <div class="set_flex__item set_flex__item--vcenter p20">
                         <div class="set-txt-s2 set-text-color__primary">Frequency</div>
                     </div>
     
-                    <div class="set_flex__item set_flex__item--vcenter set_flex__item--hcenter p15">
+                    <div class="set_flex__item set_flex__item--vcenter set_flex__item--hend pr-w5 p30">
                         <div class="set-txt-s2 set-text-color__primary">Actions</div>
                     </div>
                 </div>
@@ -82,7 +84,7 @@
                         <mat-checkbox></mat-checkbox>
                     </div>
     
-                    <div class="set_flex__item set_flex__item--vcenter set_flex__item--hcenter p5">
+                    <div class="set_flex__item set_flex__item--vcenter set_flex__item--hcenter set-w40 mx-2">
                         <div class="config-icon d-flex">
                             <span class="material-icons set-icn-small set-ico-color__status-in">insert_drive_file</span>
                         </div>
@@ -96,17 +98,17 @@
                        
                     </div>
     
-                    <div class="set_flex__item set_flex__item--vcenter p40">
+                    <div class="set_flex__item set_flex__item--vcenter p20">
                         <div class="frequency set-txt-s1 set-text-color__secondary">Daily</div>
                     </div>
     
-                    <div class="set_flex__item set_flex__item--vcenter set_flex__item--hend p15">
+                    <div class="set_flex__item set_flex__item--vcenter set_flex__item--hend p30">
                         <div class="config-actions">
                             <button mat-icon-button>
-                                <mat-icon class="set-icn-small">edit</mat-icon>
+                                <mat-icon class="set-icn-small set-ico-color__tertiary">edit</mat-icon>
                             </button>
                             <button mat-icon-button>
-                                <mat-icon class="set-icn-small">delete</mat-icon>
+                                <mat-icon class="set-icn-small set-ico-color__tertiary">delete</mat-icon>
                             </button>
                             <button mat-icon-button [matMenuTriggerFor]="actionbtnpopup">
                                 <mat-icon class="set-icn-small">more_vert</mat-icon>
@@ -130,7 +132,7 @@
                           <mat-checkbox></mat-checkbox>
                       </div>
       
-                      <div class="set_flex__item set_flex__item--vcenter set_flex__item--hcenter p5">
+                      <div class="set_flex__item set_flex__item--vcenter set_flex__item--hcenter set-w40 mx-2">
                           <div class="config-icon d-flex">
                               <span class="material-icons set-icn-small set-ico-color__status-out">insert_drive_file</span>
                           </div>
@@ -144,17 +146,17 @@
                          
                       </div>
       
-                      <div class="set_flex__item set_flex__item--vcenter p40">
+                      <div class="set_flex__item set_flex__item--vcenter p20">
                           <div class="frequency set-txt-s1 set-text-color__secondary">Daily</div>
                       </div>
       
-                      <div class="set_flex__item set_flex__item--vcenter set_flex__item--hend p15">
+                      <div class="set_flex__item set_flex__item--vcenter set_flex__item--hend p30">
                           <div class="config-actions">
                               <button mat-icon-button>
-                                  <mat-icon class="set-icn-small">edit</mat-icon>
+                                  <mat-icon class="set-icn-small set-ico-color__tertiary">edit</mat-icon>
                               </button>
                               <button mat-icon-button>
-                                  <mat-icon class="set-icn-small">delete</mat-icon>
+                                  <mat-icon class="set-icn-small set-ico-color__tertiary">delete</mat-icon>
                               </button>
                               <button mat-icon-button [matMenuTriggerFor]="actionbtnpopup">
                                   <mat-icon class="set-icn-small">more_vert</mat-icon>

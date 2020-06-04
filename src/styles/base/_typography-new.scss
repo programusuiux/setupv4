@@ -240,6 +240,12 @@ white-space: normal !important;
     color:$set-text-color__tertiary;
 }
 
+.set-ico-color__tertiary:hover{
+    color:$set-text-color__primary !important;
+
+    
+}
+
 .set-ico-color__quaternary{
     color:$set-text-color__quaternary;
 }
@@ -274,6 +280,13 @@ white-space: normal !important;
 .set-btn-bg__primary{
     background-color:$set_btn-bg-color__primary !important;
 color: #fff;
+
+}
+
+.set-btn-outline-bg__primary{
+    background-color:#fff !important;
+border: 1 px solid $set_btn-bg-color__primary !important;
+color: $set_btn-bg-color__primary;
 
 }
 

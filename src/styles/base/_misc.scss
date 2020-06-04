@@ -207,3 +207,30 @@ html {
 .mat-dialog-container{
   padding: 0px !important;
 }
+
+.mat-checkbox-checked .mat-checkbox-background {
+  background-color: #ffd740 !important;
+}
+
+.p{
+  &r{
+    &-w5{
+      padding-right: 5%;
+    }
+    &-w10{
+      padding-right: 10%;
+    }
+    &-w20{
+      padding-right: 20%;
+    }
+  
+  }
+}
+
+.set-w{
+  &40{
+    width: 40px;
+  }
+}
+
+ 
