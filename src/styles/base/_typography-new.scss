@@ -269,7 +269,15 @@ white-space: normal !important;
 
 }
 
+//Btn text Colour Classes
 
+.set-btn-txt__primary{
+    color: #fff;
+}
+
+.set-btn-txt__secondary{
+    color:#2196F3;
+}
 //Btn Colour Classes
 
 .set-btn-bg-color{
@@ -285,7 +293,7 @@ color: #fff;
 
 .set-btn-outline-bg__primary{
     background-color:#fff !important;
-border: 1 px solid $set_btn-bg-color__primary !important;
+border: 1px solid $set_btn-bg-color__primary !important;
 color: $set_btn-bg-color__primary;
 
 }

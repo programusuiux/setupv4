@@ -12,6 +12,13 @@
         background-color: #fff;
         height: 56px;
 
+        .mat-chip{
+            width: 60%;
+            .mat-form-field{
+                width: 60%;
+            }
+        }
+
         .mat-form-field-infix{
             top: 4px !important;
         }
@@ -19,6 +26,17 @@
 
     .edit-row{
         height: 56px;
+        .set-icon-btn{
+            color: #000;
+            .set-icn-small{
+                margin-top: 7px;
+            }
+        }
+
+        .set-icon-btn:hover{
+            color: #2196F3;
+        }
+
     }
 
     .set-search-config-result{
